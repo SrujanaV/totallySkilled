@@ -4,52 +4,52 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.navigation = NavigationService.getNavigation();
 
         $scope.homeBackImg = [{
-            "image": "../frontend/img/explore.png",
+            "image": "img/explore.png",
             "alt": "Explore",
             "heading": "Explore",
             "content": "Over 45,000 courses tought by experts instructions"
         }, {
-            "image": "../frontend/img/enroll.png",
+            "image": "img/enroll.png",
             "alt": "Enroll",
             "heading": "Enroll",
             "content": " In courses at anytime, with lifetime access"
         }, {
-            "image": "../frontend/img/learn.png",
+            "image": "img/learn.png",
             "alt": "Learn",
             "heading": "Learn",
             "content": "At your own pace,from any device"
         }];
         $scope.Courses = [{
-            "img": "../frontend/img/course1.jpg",
+            "img": "img/course1.jpg",
             "text": "Course 1"
         }, {
-            "img": "../frontend/img/course2.jpg",
+            "img": "img/course2.jpg",
             "text": "Course 2"
         }, {
-            "img": "../frontend/img/course3.jpg",
+            "img": "img/course3.jpg",
             "text": "Course 3"
         }, {
-            "img": "../frontend/img/course4.jpg",
+            "img": "img/course4.jpg",
             "text": "Course 4"
         }, {
-            "img": "../frontend/img/course5.png",
+            "img": "img/course5.png",
             "text": "Course 5"
         }, {
-            "img": "../frontend/img/course6.png",
+            "img": "img/course6.png",
             "text": "Course 6"
         }];
         $scope.Facilities = [{
-            "image": "../frontend/img/unlimited.png",
+            "image": "img/unlimited.png",
             "alt": "Unlimited Access",
             "heading": "Unlimited Access",
             "content": "Choose what you'd like to learn from our extensive subscription library."
         }, {
-            "image": "../frontend/img/teachers.png",
+            "image": "img/teachers.png",
             "alt": "Expert Teachers",
             "heading": "Expert Teachers",
             "content": "Learn from industry experts who are passionate about teaching.Learn Anywhere"
         }, {
-            "image": "../frontend/img/learn_anywhere.png",
+            "image": "img/learn_anywhere.png",
             "alt": "Learn Anywhere",
             "heading": "Learn Anywhere",
             "content": "Switch between your computer,tablet, or mobile device."
@@ -73,63 +73,63 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         }];
 
         $scope.cards = [{
-            "image": "../frontend/img/cardimage1.png",
+            "image": "img/cardimage1.png",
             "alt": "Testimonials 1",
             "content": "Pellentesque habitant morbitristique senectus et netus etmalesuada fames ac turpis egest ipsum primis in faucibus.Sed utnetlectus laoreet aliquameu cond.",
             "name": "- Robert Wotson",
             "company": "Infosys",
             "des": "CEO"
         }, {
-            "image": "../frontend/img/cardimage2.png",
+            "image": "img/cardimage2.png",
             "alt": "Testimonials 1",
             "content": "Pellentesque habitant morbitristique senectus et netus etmalesuada fames ac turpis egest ipsum primis in faucibus.Sed utnetlectus laoreet aliquameu cond.",
             "name": "- Robert Wotson",
             "company": "Infosys",
             "des": "CEO"
         }, {
-            "image": "../frontend/img/cardimage3.png",
+            "image": "img/cardimage3.png",
             "alt": "Testimonials 1",
             "content": "Pellentesque habitant morbitristique senectus et netus etmalesuada fames ac turpis egest ipsum primis in faucibus.Sed utnetlectus laoreet aliquameu cond.",
             "name": "- Robert Wotson",
             "company": "Infosys",
             "des": "CEO"
         }, {
-            "image": "../frontend/img/cardimage1.png",
+            "image": "img/cardimage1.png",
             "alt": "Testimonials 1",
             "content": "Pellentesque habitant morbitristique senectus et netus etmalesuada fames ac turpis egest ipsum primis in faucibus.Sed utnetlectus laoreet aliquameu cond.",
             "name": "- Robert Wotson",
             "company": "Infosys",
             "des": "CEO"
         }, {
-            "image": "../frontend/img/cardimage2.png",
+            "image": "img/cardimage2.png",
             "alt": "Testimonials 1",
             "content": "Pellentesque habitant morbitristique senectus et netus etmalesuada fames ac turpis egest ipsum primis in faucibus.Sed utnetlectus laoreet aliquameu cond.",
             "name": "- Robert Wotson",
             "company": "Infosys",
             "des": "CEO"
         }, {
-            "image": "../frontend/img/cardimage3.png",
+            "image": "img/cardimage3.png",
             "alt": "Testimonials 1",
             "content": "Pellentesque habitant morbitristique senectus et netus etmalesuada fames ac turpis egest ipsum primis in faucibus.Sed utnetlectus laoreet aliquameu cond.",
             "name": "- Robert Wotson",
             "company": "Infosys",
             "des": "CEO"
         }, {
-            "image": "../frontend/img/cardimage1.png",
+            "image": "img/cardimage1.png",
             "alt": "Testimonials 1",
             "content": "Pellentesque habitant morbitristique senectus et netus etmalesuada fames ac turpis egest ipsum primis in faucibus.Sed utnetlectus laoreet aliquameu cond.",
             "name": "- Robert Wotson",
             "company": "Infosys",
             "des": "CEO"
         }, {
-            "image": "../frontend/img/cardimage2.png",
+            "image": "img/cardimage2.png",
             "alt": "Testimonials 1",
             "content": "Pellentesque habitant morbitristique senectus et netus etmalesuada fames ac turpis egest ipsum primis in faucibus.Sed utnetlectus laoreet aliquameu cond.",
             "name": "- Robert Wotson",
             "company": "Infosys",
             "des": "CEO"
         }, {
-            "image": "../frontend/img/cardimage3.png",
+            "image": "img/cardimage3.png",
             "alt": "Testimonials 1",
             "content": "Pellentesque habitant morbitristique senectus et netus etmalesuada fames ac turpis egest ipsum primis in faucibus.Sed utnetlectus laoreet aliquameu cond.",
             "name": "- Robert Wotson",
