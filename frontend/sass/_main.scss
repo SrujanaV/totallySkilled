@@ -531,7 +531,7 @@ flexslider {
         padding-left: 2px;
         @include mar(30px 0);
         &:before {
-            background-image: url(../frontend/img/quotes.png);
+            background-image: url(img/quotes.png);
             @include position(absolute,
             0,
             0,
