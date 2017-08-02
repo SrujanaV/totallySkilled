@@ -6,7 +6,6 @@ var myApp = angular.module('myApp', [
     'angulartics.google.analytics',
     'ui.bootstrap',
     'angular-flexslider',
-    'ui.swiper',
     'angularPromiseButtons',
     'toastr',
     'angular-flexslider',
