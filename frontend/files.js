@@ -3,7 +3,7 @@ module.exports = [
   'bower_components/jquery/dist/jquery.min.js',
   'bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
   'bower_components/flexslider/jquery.flexslider-min.js',
-  'bower_components/fancyBox/dist/jquery.fancybox.js',
+  'bower_components/fancybox/dist/jquery.fancybox.js',
   'bower_components/smart-app-banner/smart-app-banner.js',
   "bower_components/moment/min/moment.min.js",
 
@@ -20,7 +20,6 @@ module.exports = [
   'bower_components/lodash/lodash.js',
   'bower_components/angulartics/dist/angulartics.min.js',
   'bower_components/angulartics-google-analytics/dist/angulartics-ga.min.js',
-  'bower_components/angular-ui-swiper/dist/angular-ui-swiper.js',
   "bower_components/angular-toastr/dist/angular-toastr.js",
   "bower_components/angular-toastr/dist/angular-toastr.tpls.js",
   "bower_components/angular-promise-buttons/dist/angular-promise-buttons.js",
