@@ -10260,6 +10260,46 @@ flexslider {
     .flexslider-cards .card-footer .company-name {
       color: #eb0509; }
 
+.relative {
+  position: relative; }
+
+.banner-img-text {
+  position: absolute;
+  top: 0; }
+
+.margin0 {
+  margin: 0; }
+
+.heading-category h4 {
+  font-family: Myriad Pro Regular;
+  color: #eb0509;
+  font-size: 20px; }
+
+.ctergory-text {
+  padding: 10px 15px; }
+  .ctergory-text h5 {
+    font-family: Myriad Pro Bold;
+    color: #eb0509;
+    font-size: 16px;
+    line-height: 30px; }
+  .ctergory-text p {
+    font-family: Myriad Pro Regular;
+    font-size: 13px;
+    color: #000; }
+  .ctergory-text span {
+    font-size: 13px;
+    font-family: Myriad Pro Regular;
+    color: #000; }
+
+.bg-gray {
+  background-color: #f6f6f6; }
+
+.padd-r {
+  padding-right: 10px; }
+
+.text-bold {
+  font-family: Myriad Pro Bold !important; }
+
 #fancybox-loading,
 .fancybox-close,
 .fancybox-next span,
