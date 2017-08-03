@@ -10050,6 +10050,102 @@ header {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%); }
 
+.moduleBackground {
+  background-color: #f1f1f1; }
+
+.moduleTest {
+  margin: 10px 40px; }
+
+.video-div {
+  background-color: white; }
+  .video-div .video-head {
+    padding: 15px 10px;
+    font-size: 16px;
+    color: black; }
+  .video-div .video-img {
+    position: relative; }
+    .video-div .video-img .video-overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .video-div .video-img .videologo-pos {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 150px;
+      height: 150px;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%); }
+
+.rel-course button {
+  background-color: #fd393b;
+  border-radius: 7px;
+  font-size: 18px;
+  font-family: Myriad Pro Semibold; }
+
+.rel-course .back-color {
+  max-height: 590px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: white; }
+
+.rel-course .course-head {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: black; }
+
+.rel-course .video-text {
+  margin-left: -15px; }
+
+.rel-course h5 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-family: Myriad Pro Semibold; }
+
+.rel-course h6 {
+  margin-bottom: 0px;
+  margin-top: 2px; }
+
+.rel-course span {
+  color: #666;
+  margin-right: 20px;
+  font-size: 10px; }
+
+.module-detBottom {
+  background-color: white;
+  margin: 30px 0; }
+  .module-detBottom .navigation {
+    margin: 20px 60px;
+    border-bottom: solid 1px #CCC; }
+  .module-detBottom .nav > li > a {
+    color: black; }
+  .module-detBottom .nav > li > a:hover,
+  .module-detBottom .nav > li > a:focus {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: solid 3px #eb0509; }
+  .module-detBottom .module-content {
+    margin: 50px 50px;
+    text-align: justify; }
+  .module-detBottom button {
+    padding: 3px 15px;
+    background-color: #fe3d3c;
+    border-radius: 7px;
+    font-size: 18px;
+    font-family: Myriad Pro Semibold; }
+    .module-detBottom button i {
+      margin-right: 10px; }
+
 .home {
   overflow: hidden; }
   .home .container-fluid {
