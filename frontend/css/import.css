@@ -9942,7 +9942,7 @@ footer {
   color: white;
   padding: 10px 0; }
   footer p {
-    margin: 0; }
+    margin-top: 7px; }
   footer a {
     margin-left: 20px;
     text-decoration: none;
@@ -9950,15 +9950,18 @@ footer {
   footer .footer_margin {
     margin: 0 40px; }
     footer .footer_margin .arr_des {
+      text-align: center;
       margin-left: 20px;
-      padding: 10px;
       border: solid 1px white;
       border-radius: 100%;
       font-size: 20px;
       width: 30px;
-      height: 30px; }
-    footer .footer_margin img {
-      margin-left: 20px; }
+      height: 30px;
+      cursor: pointer; }
+    footer .footer_margin .right-footer {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
 
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
@@ -10030,6 +10033,11 @@ header {
       background-color: #eb0509;
       border-radius: 5px;
       padding: 5px; }
+      header .right-nav button:active.noshadow {
+        border: 0;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none; }
     header .right-nav p {
       display: inline-block;
       margin: 10px; }
