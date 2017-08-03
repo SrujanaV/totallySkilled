@@ -4,7 +4,7 @@
     <section class="container-fluid">
         <div class="home_bg">
             <div class="bg-overlay"></div>
-            <img src="img/home_bg.jpg" class="img-responsive">
+            <div><img src="img/home_bg.jpg" class="img-responsive"></div>
             <div class="bgImage-text text-center">
                 <h1><b>Learn a new skill online, on your time !</b></h1>
                 <h3>Take in depth online courses and meet any challenge with skill.</h3>
@@ -43,7 +43,7 @@
                         <img ng-src={{course.img}} alt="EXPLORE" class="img-responsive">
                         <div class="course-imgoverlay"></div>
                         <div class="course-text">
-                            <h4>{{course.text}}</h4>
+                            <h4><a>{{course.text}}</a></h4>
                         </div>
                     </div>
                 </div>

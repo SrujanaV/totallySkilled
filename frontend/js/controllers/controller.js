@@ -32,10 +32,10 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             "img": "img/course4.jpg",
             "text": "Course 4"
         }, {
-            "img": "img/course5.png",
+            "img": "img/course5.jpg",
             "text": "Course 5"
         }, {
-            "img": "img/course6.png",
+            "img": "img/course6.jpg",
             "text": "Course 6"
         }];
         $scope.Facilities = [{

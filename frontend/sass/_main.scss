@@ -52,63 +52,21 @@ $font-color:#ee080b;
     font-family: 'Myriad Pro Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Myriad Pro Regular'), url('../fonts/Myriad Pro Bold SemiExtended.ttf') format('woff');
-}
-
-@font-face {
-    font-family: 'Myriad Pro Condensed';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Myriad Pro Condensed'), url('%PUBLIC_URL%/static/fonts/MYRIADPRO-COND.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Myriad Pro Semibold Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Myriad Pro Semibold Italic'), url('%PUBLIC_URL%/static/fonts/MYRIADPRO-SEMIBOLDIT.woff') format('woff');
+    src: local('Myriad Pro Regular'), url('../fonts/MyriadPro-Regular.otf') format('woff');
 }
 
 @font-face {
     font-family: 'Myriad Pro Semibold';
     font-style: normal;
-    font-weight: normal;
-    src: local('Myriad Pro Semibold'), url('%PUBLIC_URL%/static/fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Myriad Pro Condensed Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Myriad Pro Condensed Italic'), url('%PUBLIC_URL%/static/fonts/MYRIADPRO-CONDIT.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Myriad Pro Bold Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Myriad Pro Bold Italic'), url('%PUBLIC_URL%/static/fonts/MYRIADPRO-BOLDIT.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Myriad Pro Bold Condensed Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Myriad Pro Bold Condensed Italic'), url('%PUBLIC_URL%/static/fonts/MYRIADPRO-BOLDCONDIT.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Myriad Pro Bold Condensed';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Myriad Pro Bold Condensed'), url('%PUBLIC_URL%/static/fonts/MYRIADPRO-BOLDCOND.woff') format('woff');
+    font-weight: 300px;
+    src: local('Myriad Pro Semibold'), url('../fonts/Myriad Pro Bold SemiExtended.ttf') format('woff');
 }
 
 @font-face {
     font-family: 'Myriad Pro Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Myriad Pro Bold'), url('%PUBLIC_URL%/static/fonts/MYRIADPRO-BOLD.woff') format('woff');
+    src: local('Myriad Pro Bold'), url('../fonts/Myriad Pro Bold SemiExtended.ttf') format('woff');
 }
 
 body {
@@ -180,6 +138,15 @@ footer {
     }
     .footer_margin {
         margin: 0 40px;
+        .arr_des {
+            margin-left: 20px;
+            padding: 10px;
+            border: solid 1px white;
+            border-radius: 100%;
+            font-size: 20px;
+            width: 30px;
+            height: 30px;
+        }
         img {
             margin-left: 20px;
         }
@@ -270,10 +237,6 @@ header {
     .right-nav {
         margin-top: 10px;
         button {
-            @include linx(white,
-            blue,
-            green,
-            red);
             background-color: $red;
             border-radius: 5px;
             padding: 5px;
@@ -293,283 +256,3 @@ header {
 .nav-up {
     transform: translateY(-100%);
 }
-
-// Start of Home Page
-.home {
-    overflow: hidden;
-    .container-fluid {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .home_bg {
-        position: relative;
-        z-index: -1;
-        button {
-            background-color: $red;
-            border-radius: 10px;
-            padding: 10px 65px;
-            font-size: 18px;
-        }
-        .bgImage-text {
-            @include position(absolute,
-            45%,
-            50%,
-            null,
-            null,
-            null,
-            null);
-            transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
-            color: white;
-            width: 100%;
-            h1 {
-                font-size: 38px !important;
-            }
-            h3 {
-                @include mar(10px 0px);
-                font-size: 23px !important;
-            }
-            .text-margin {
-                @include mar(30px 0px);
-            }
-        }
-        .bg-overlay {
-            @include position(absolute,
-            0,
-            0,
-            null,
-            null,
-            100%,
-            100%);
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-    }
-}
-
-.bgImg-steps {
-    @include pad(20px);
-    width: 70%;
-    @include mar(0px auto);
-    background-color: #f3f3f3;
-    margin-top: -117px;
-    margin-bottom: 40px;
-    z-index: 1;
-    h4 {
-        margin-bottom: 0px;
-    }
-    .img-width {
-        max-height: 60px;
-        img {
-            height: 60px;
-        }
-    }
-}
-
-.courses {
-    @include mar(0 30px);
-    .course-text {
-        position: absolute;
-    }
-    .course-img {
-        position: relative;
-        width: 350px;
-        height: 250px;
-        overflow: hidden;
-        @include mar(10px);
-        .course-imgoverlay {
-            @include position(absolute,
-            0,
-            0,
-            null,
-            null,
-            100%,
-            100%);
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        .course-text {
-            @include position(absolute,
-            55%,
-            50%,
-            null,
-            null,
-            null,
-            null);
-            transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
-            color: white;
-            width: 100%;
-        }
-    }
-}
-
-.facilities {
-    .redBg-img {
-        position: relative;
-        @include mar(80px auto);
-        .redBg-content {
-            @include position(absolute,
-            20%,
-            10%,
-            null,
-            null,
-            80%,
-            null);
-            color: white;
-            .img-height {
-                min-height: 80px;
-                img {
-                    width: 80px;
-                }
-            }
-        }
-    }
-}
-
-.about-title,
-.course-title,
-.testim-title {
-    text-align: center;
-    @include mar(20px auto);
-    color: $font-color;
-}
-
-.about {
-    .flex-direction-nav a {
-        display: none;
-    }
-    .about-head {
-        width: 650px;
-        @include mar(30px auto);
-        font-size: 16px;
-        color: black;
-    }
-    .about-content {
-        width: 850px;
-        @include mar(0 auto);
-        margin-bottom: 40px;
-        font-size: 14px;
-    }
-}
-
-.flex-control-paging li a {
-    background: $red;
-    margin: 0 3px;
-}
-
-.flex-control-paging li a.flex-active {
-    background: black;
-}
-
-flexslider {
-    width: 790px;
-    margin: 0 auto;
-    box-shadow: none;
-}
-
-.flexslider {
-    background: transparent;
-    border: 0;
-}
-
-.test-cont {
-    background-color: #f3f3f3;
-    margin-top: 30px;
-    @include pad(30px);
-    .testimonials {
-        @include mar(30px 30px);
-        .flex-direction-nav a:before {
-            font: normal normal normal 14px/1 FontAwesome;
-            font-size: 50px;
-            display: inline-block;
-            content: '\f104';
-            color: rgba(0, 0, 0, 0.8);
-        }
-    }
-    .flex-direction-nav .flex-prev {
-        left: -55px !important;
-        font: normal normal normal 14px/1 FontAwesome;
-        font-size: 50px;
-        display: inline-block;
-        content: '\f104';
-        color: black;
-    }
-    .flex-direction-nav .flex-next {
-        right: -55px !important;
-        font: normal normal normal 14px/1 FontAwesome;
-        font-size: 50px;
-        display: inline-block;
-        content: '\f105';
-        color: black;
-    }
-    .flex-direction-nav a.flex-next:before {
-        content: '\f105';
-    }
-    .flex-control-nav {
-        display: none;
-    }
-}
-
-.flexslider-cards {
-    border: 1px #CCC solid;
-    box-shadow: 0px 11px 8px -10px #CCC, 0px -11px 8px -10px #CCC;
-    margin: 0 20px;
-    text-align: center;
-    background: white;
-    .flex-control-nav {
-        display: none;
-    }
-    .flex-direction-nav a {
-        display: block !important;
-    }
-    .card-content {
-        position: relative;
-        text-align: justify;
-        padding-left: 2px;
-        @include mar(30px 0);
-        &:before {
-            background-image: url(img/quotes.png);
-            @include position(absolute,
-            0,
-            0,
-            null,
-            null,
-            30px,
-            null);
-        }
-    }
-    .card-quotesImg {
-        @include position(absolute,
-        0,
-        0,
-        null,
-        null,
-        30px,
-        null);
-    }
-    .card-spacing {
-        padding: 30px;
-        .card {
-            text-align: center;
-            .person {
-                width: 200px;
-            }
-            .img-holder {
-                width: 200px;
-                height: 200px;
-                margin: 0 auto;
-            }
-        }
-    }
-    .card-footer {
-        text-align: right;
-        .company-name {
-            color: $red;
-        }
-    }
-}
-
-// End of Home Page
