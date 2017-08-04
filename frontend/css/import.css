@@ -9923,6 +9923,21 @@ a,
   cursor: pointer;
   transition: all ease 300ms; }
 
+p {
+  font-family: Myriad Pro Regular;
+  font-size: 13px;
+  color: #000; }
+
+h5 {
+  font-family: Myriad Pro Bold;
+  color: #eb0509;
+  font-size: 16px; }
+
+h4 {
+  font-family: Myriad Pro Regular;
+  color: #eb0509;
+  font-size: 20px; }
+
 .footer_menu {
   background-color: #191919;
   color: white; }
@@ -10366,22 +10381,10 @@ flexslider {
 .margin0 {
   margin: 0; }
 
-.heading-category h4 {
-  font-family: Myriad Pro Regular;
-  color: #eb0509;
-  font-size: 20px; }
-
 .ctergory-text {
   padding: 10px 15px; }
   .ctergory-text h5 {
-    font-family: Myriad Pro Bold;
-    color: #eb0509;
-    font-size: 16px;
     line-height: 30px; }
-  .ctergory-text p {
-    font-family: Myriad Pro Regular;
-    font-size: 13px;
-    color: #000; }
   .ctergory-text span {
     font-size: 13px;
     font-family: Myriad Pro Regular;
