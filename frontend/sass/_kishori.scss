@@ -1,19 +1,108 @@
-.relative {
-  position: relative;
+.mar-lr {
+  margin: 0px 40px;
 }
 
-.banner-img-text {
+.banner-img {
+  background-image: url("../img/module/1.jpg");
+  width: 100%;
+  height: 536px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn-white {
+  position: relative;
+  width: 270px;
+  border: 2px solid #e3e3e3;
+  border-radius: 5px;
+  color: #b8b8b8;
+}
+
+.btn-white:hover {
+  background: #fff;
+  border: 2px solid #e3e3e3;
+}
+
+.btn-gray {
   position: absolute;
-  top: 0;
+  width: 30px;
+  height: 33px;
+  right: 1px;
+  top: 1px;
+  font-size: 20px;
+  background: #e3e3e3;
+  border: none;
+  pointer-events: none;
+}
+
+.btn-filter {
+  position: absolute;
+  left: 5px;
+  top: 7px;
+  font-size: 15px;
+  border: none;
+}
+
+.mar-tb {
+  margin: 35px 0px 40px 0px;
+}
+
+.mar-b {
+  margin-bottom: 50px;
 }
 
 .margin0 {
   margin: 0;
 }
 
+.mar-t {
+  margin-top: 20px;
+}
+
+.mar-b {
+  margin-bottom: 35px;
+}
+
+.learn-form {
+  font-size: 80px;
+  font-family: 'Myriad Pro Bold';
+  color: #000;
+  letter-spacing: -8px;
+}
+
+.banner-img-text {
+  margin-top: 60px;
+}
+
+.the-best {
+  font-size: 108px;
+  margin-top: -30px;
+}
+
+.pace {
+  font-size: 53px;
+  color: #000;
+  margin-top: -30px;
+}
+
+.conveiniance {
+  font-size: 47px;
+  color: #000;
+}
+
 .heading-category {
   h4 {
     color: $red;
+  }
+}
+
+.btn-red {
+  margin-top: 60px;
+  button {
+    font-size: 20px;
+    font-family: 'Myriad Pro Bold';
+    border-radius: 15px;
   }
 }
 
@@ -26,12 +115,26 @@
   span {
     font-size: 13px;
     font-family: Myriad Pro Regular;
+    color: #5d5d5d;
+    ;
+  }
+  p {
     color: #000;
   }
 }
 
+.color-b {
+  color: #000 !important;
+}
+
 .bg-gray {
   background-color: #f6f6f6;
+}
+
+.box-shadow {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 5px rgba(136, 136, 136, 0.55);
 }
 
 .padd-r {
@@ -40,4 +143,28 @@
 
 .text-bold {
   font-family: Myriad Pro Bold !important;
+  padding-right: 3px;
+}
+
+.cource-detail {
+  padding-top: 40px;
+  h4 {
+    font-family: 'Myriad Pro Bold';
+    color: $red;
+  }
+}
+
+.cource-detail-heading {
+  h4 {
+    font-family: 'Myriad Pro Bold';
+    color: #000;
+    font-size: 18px;
+  }
+}
+
+.cource-detail-text {
+  padding-bottom: 40px;
+  p {
+    font-size: 15px;
+  }
 }
