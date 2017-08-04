@@ -107,21 +107,22 @@ a,
     transition: all ease 300ms;
 }
 
- p{
-       font-family: Myriad Pro Regular;
-         font-size: 13px;
-       color: #000;
- }
-  h5{
-    font-family: Myriad Pro Bold;
-     color: $red;
-    font-size: 16px;
-  }
-  h4{
+p {
     font-family: Myriad Pro Regular;
-    color: $red;
+    font-size: 13px;
+    color: #000;
+}
+
+h5 {
+    font-family: Myriad Pro Bold;
+    font-size: 16px;
+}
+
+h4 {
+    font-family: Myriad Pro Regular;
     font-size: 20px;
-  }
+}
+
 .footer_menu {
     background-color: #191919;
     color: white;
@@ -279,10 +280,6 @@ header {
 .nav-up {
     transform: translateY(-100%);
 }
-
-
-
-
 
 //start of module details test page
 .moduleBackground {

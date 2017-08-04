@@ -9930,12 +9930,10 @@ p {
 
 h5 {
   font-family: Myriad Pro Bold;
-  color: #eb0509;
   font-size: 16px; }
 
 h4 {
   font-family: Myriad Pro Regular;
-  color: #eb0509;
   font-size: 20px; }
 
 .footer_menu {
@@ -10381,9 +10379,13 @@ flexslider {
 .margin0 {
   margin: 0; }
 
+.heading-category h4 {
+  color: #eb0509; }
+
 .ctergory-text {
   padding: 10px 15px; }
   .ctergory-text h5 {
+    color: #eb0509;
     line-height: 30px; }
   .ctergory-text span {
     font-size: 13px;

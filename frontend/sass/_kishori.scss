@@ -1,34 +1,43 @@
-.relative{
-position:relative;
-}
-.banner-img-text{
- position:absolute;
-  top:0;
-}
-.margin0{
-   margin: 0;
+.relative {
+  position: relative;
 }
 
-.ctergory-text{
+.banner-img-text {
+  position: absolute;
+  top: 0;
+}
+
+.margin0 {
+  margin: 0;
+}
+
+.heading-category {
+  h4 {
+    color: $red;
+  }
+}
+
+.ctergory-text {
   padding: 10px 15px;
-  h5{
-   
+  h5 {
+    color: $red;
     line-height: 30px;
   }
- 
-  span{
- 
-     font-size: 13px;
-     font-family: Myriad Pro Regular;
-       color: #000;
+  span {
+    font-size: 13px;
+    font-family: Myriad Pro Regular;
+    color: #000;
   }
 }
-.bg-gray{
+
+.bg-gray {
   background-color: #f6f6f6;
 }
-.padd-r{
-padding-right: 10px;
+
+.padd-r {
+  padding-right: 10px;
 }
-.text-bold{
+
+.text-bold {
   font-family: Myriad Pro Bold !important;
 }
