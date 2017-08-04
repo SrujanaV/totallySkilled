@@ -110,7 +110,6 @@ a,
 p {
     font-family: Myriad Pro Regular;
     font-size: 13px;
-    color: #000;
 }
 
 h5 {
@@ -338,15 +337,12 @@ header {
         overflow-x: hidden;
         @include mar(15px 0);
         @include pad(10px);
-        background-color: white; // .side_video {
-        //     position: relative;
-        // }
-        // .side_video::after {
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     border: 1px solid #000;
-        // }
+        background-color: white;
+        .side-video {
+            cursor: pointer;
+            margin-bottom: 5px;
+            border-bottom: solid 1px black;
+        }
     }
     .course-head {
         margin-bottom: 10px;
@@ -355,8 +351,10 @@ header {
     }
     .video-text {
         margin-left: -15px;
+        cursor: pointer;
     }
     h5 {
+        font-size: 14px;
         margin-top: 0px;
         margin-bottom: 5px;
         font-family: Myriad Pro Semibold;
@@ -375,24 +373,47 @@ header {
 .module-detBottom {
     background-color: white;
     @include mar(30px 0);
-    .navigation {
-        @include mar(20px 60px);
-        border-bottom: solid 1px #CCC;
-    }
+    .nav {
+        margin: 5px 60px;
+    } // .nav-tabs>li {
+    //     border-bottom: solid 3px transparent;
+    // }
+    // .nav-tabs>li>a:hover,
+    // .nav-tabs>li>a:active,
+    // .nav-tabs>li>a:focus {
+    //     border: 0;
+    //     border-color: $red;
+    //     background-color: transparent;
+    // }
+    // .nav-tabs>li.active,
+    // .nav-tabs>li:hover,
+    // .nav-tabs>li:focus {
+    //     text-decoration: none;
+    //     color: black;
+    //     border: 0;
+    //     border-radius: 0;
+    //     font-weight: bold;
+    //     background-color: transparent !important;
+    //     border-color: $red;
+    //     cursor: pointer;
+    // }
     .nav>li>a {
-        color: black;
+        color: #555555;
+        border: 0;
+        border-bottom: solid 3px transparent;
     }
-    .nav>li>a:hover,
-    .nav>li>a:focus {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
+    .nav-tabs>li:hover>a,
+    .nav-tabs>li:focus>a,
+    .nav-tabs>li.active>a {
+        color: #555555;
+        font-weight: 300px;
         background-color: transparent;
-        border-radius: 0;
+        border: 0;
         border-bottom: solid 3px $red;
+        cursor: default;
     }
     .module-content {
-        margin: 50px 50px;
+        margin: 50px 60px;
         text-align: justify;
     }
     button {
@@ -404,6 +425,55 @@ header {
         i {
             margin-right: 10px;
         }
+    }
+    .btn-test {
+        margin: 80px 0px;
+    }
+}
+
+.author {
+    padding: 50px 10px;
+    padding-top: 0px;
+}
+
+.seemore {
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 300px;
+    }
+}
+
+.module {
+    @include mar(30px 45px);
+    .module_img {
+        max-height: 150px;
+        img {
+            height: 130px;
+        }
+    }
+    h5 {
+        font-size: 14px;
+        margin-top: 3px;
+        margin-bottom: 2px;
+        font-family: Myriad Pro Semibold;
+    }
+    h6 {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    span {
+        color: #666;
+        margin-right: 20px;
+        font-size: 10px;
+    }
+}
+
+.module-block {
+    width: 218px;
+    background-color: #f8f8f8;
+    .video-text {
+        margin: 19px;
     }
 }
 

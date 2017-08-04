@@ -148,49 +148,49 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.navigation = NavigationService.getNavigation();
         $scope.categoryImg = [{
 
-            "image": "img/module/2.jpg",
-            "title": "Category 1",
-            "title1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-            "title2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.consectetur adipisicing elit.Lorem ipsum dolor sit amet,",
-            "title3": "Harray Johnson",
-            "title4": "45min 57s",
-            "title5": "1,3890 ",
-            "title6": " Views"
-        },
-        {
+                "image": "img/module/2.jpg",
+                "title": "Category 1",
+                "title1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "title2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.consectetur adipisicing elit.Lorem ipsum dolor sit amet,",
+                "title3": "Harray Johnson",
+                "title4": "45min 57s",
+                "title5": "1,3890 ",
+                "title6": " Views"
+            },
+            {
 
-            "image": "img/module/4.jpg",
-            "title": "Category 2",
-            "title1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-            "title2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.consectetur adipisicing elit.Lorem ipsum dolor sit amet,",
-            "title3": "Harray Johnson",
-            "title4": "45min 57s",
-            "title5": "1,3890 ",
-            "title6": " Views"
-        },
-          {
+                "image": "img/module/4.jpg",
+                "title": "Category 2",
+                "title1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "title2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.consectetur adipisicing elit.Lorem ipsum dolor sit amet,",
+                "title3": "Harray Johnson",
+                "title4": "45min 57s",
+                "title5": "1,3890 ",
+                "title6": " Views"
+            },
+            {
 
-            "image": "img/module/5.jpg",
-            "title": "Category 3",
-            "title1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-            "title2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.consectetur adipisicing elit.Lorem ipsum dolor sit amet,",
-            "title3": "Harray Johnson",
-            "title4": "45min 57s",
-            "title5": "1,3890 ",
-            "title6": " Views"
-        },
-          {
+                "image": "img/module/5.jpg",
+                "title": "Category 3",
+                "title1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "title2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.consectetur adipisicing elit.Lorem ipsum dolor sit amet,",
+                "title3": "Harray Johnson",
+                "title4": "45min 57s",
+                "title5": "1,3890 ",
+                "title6": " Views"
+            },
+            {
 
-            "image": "img/module/6.jpg",
-            "title": "Category 4",
-            "title1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-            "title2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.consectetur adipisicing elit.Lorem ipsum dolor sit amet,",
-            "title3": "Harray Johnson",
-            "title4": "45min 57s",
-            "title5": "1,3890 ",
-            "title6": " Views"
-        }
-        
+                "image": "img/module/6.jpg",
+                "title": "Category 4",
+                "title1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "title2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.consectetur adipisicing elit.Lorem ipsum dolor sit amet,",
+                "title3": "Harray Johnson",
+                "title4": "45min 57s",
+                "title5": "1,3890 ",
+                "title6": " Views"
+            }
+
         ];
         // $scope.image = "img/module/2.jpg";
         // $scope.title = "Category 1";
