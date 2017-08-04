@@ -112,4 +112,16 @@ myApp.directive('img', function ($compile, $parse) {
                 console.log("Directive model: ", $scope.model);
             }
         };
-    });
+    })
+
+// .directive('video', function ($http, $filter) {
+//     return {
+//         templateUrl: 'views/directive/video.html',
+//         scope: {
+//             model: "=ngModel"
+//         },
+//         link: function ($scope, element, attrs) {
+//             console.log("video Directive model: ", $scope.model);
+//         }
+//     };
+// });
