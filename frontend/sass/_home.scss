@@ -72,6 +72,7 @@
         .course-imgoverlay {
             @include position(absolute, 0, 0, null, null, 100%, 100%);
             background-color: rgba(0, 0, 0, 0.5);
+            pointer-events: none;
         }
         .course-text {
             @include position(absolute, 55%, 50%, null, null, null, null);
@@ -208,7 +209,7 @@ flexslider {
     .card-content {
         position: relative;
         text-align: justify;
-        padding-left: 2px;
+        padding-left: 12px;
         @include mar(30px 0);
         &:before {
             background-image: url(img/quotes.png);
