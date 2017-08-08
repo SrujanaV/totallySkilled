@@ -105,15 +105,22 @@
     border-radius: 15px;
   }
 }
-.category-img{
-  position:relative;
-  &:hover{
-     .course-imgoverlay {
-         @include position(absolute, 0, 0, null, null, 100%, 100%);
-            background-color: rgba(0, 0, 0, 0.5);
-            @include transition( 1.0s );
-            pointer-events: none;
-        }
+
+.category-img {
+  position: relative;
+  &:hover {
+    .course-imgoverlay {
+      @include position(absolute,
+      0,
+      0,
+      null,
+      null,
+      100%,
+      100%);
+      background-color: rgba(0, 0, 0, 0.5);
+      @include transition( 1.0s);
+      pointer-events: none;
+    }
   }
 }
 
@@ -139,7 +146,7 @@
 }
 
 .bg-gray {
-  background-color: #f6f6f6;
+  background: #f6f6f6;
 }
 
 .box-shadow {
@@ -178,4 +185,155 @@
   p {
     font-size: 15px;
   }
+}
+
+//start of module-test page
+.moduletest-bg {
+  background-image: url("../img/module/7.jpg");
+  width: 100%;
+  height: 200px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.bg-overlay-module {
+  @include position(absolute,
+  0,
+  0,
+  null,
+  null,
+  100%,
+  100%);
+  background-color: rgba(0, 0, 0, 0.22);
+}
+
+.text-module {
+  position: absolute;
+  top: 34%;
+  left: 45%;
+  h2 {
+    font-family: Myriad Pro Regular;
+    color: $moduleDetBack; //  margin-top: 85px;
+  }
+}
+
+.bg-gray {
+  background-color: #ebebeb;
+}
+
+.strip-gray {
+  background-color: #3a3a3a;
+}
+
+.course-test {
+  h5 {
+    font-family: Myriad Pro Regular;
+    color: #fff;
+    padding: 6px 60px;
+  }
+}
+.Complete-test{
+  .btn{
+padding: 3px 12px;
+    margin: 10px 0px;
+  }
+}
+.btn-complrtetest {
+  font-family: 'Myriad Pro Bold';
+  font-size: 14px;
+  border-radius: 6px;
+}
+.mar-tb{
+  margin: 10px 0px;
+}
+.questions{
+  span{
+    font-family: 'Myriad Pro Bold';
+      font-size: 17px;
+  }
+  p{
+      font-size: 18px;
+      color: #000;
+  }
+  h6{
+     font-family: Myriad Pro Regular;
+       font-size: 16px;
+       color: #000;
+       padding: 20px 60px;
+  }
+}
+.bg-white{
+  background-color: white;
+}
+.padd-tblr{
+  padding: 50px 60px;
+}
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 15px;
+   height: 15px;
+  border: 1px solid #ccc;
+  background: #fff;
+  // border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: .1em;
+left: -2px;
+  font-size: 1.3em;
+  line-height: 0.8;
+  color:$red;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+
+.options{
+      margin: 25px 0px 5px 65px;
+}
+.options2{
+    margin: 25px 0px 5px 25px;
 }

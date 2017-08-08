@@ -35,13 +35,13 @@
                 @include mar(30px 0px);
             }
         }
-        .bg-overlay {
+        
+    }
+}
+.bg-overlay {
             @include position(absolute, 0, 0, null, null, 100%, 100%);
             background-color: rgba(0, 0, 0, 0.5);
         }
-    }
-}
-
 .bgImg-steps {
     @include pad(20px);
     width: 70%;
