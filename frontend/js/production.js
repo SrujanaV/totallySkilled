@@ -60274,6 +60274,21 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'HomeCtrl'
         })
+        .state('module', {
+            url: "/module",
+            templateUrl: tempateURL,
+            controller: 'moduleCtrl'
+        })
+        .state('module-test', {
+            url: "/module-test",
+            templateUrl: tempateURL,
+            controller: 'moduleDetailCtrl'
+        })
+        .state('module-overview', {
+            url: "/module-overview",
+            templateUrl: tempateURL,
+            controller: 'moduleDetailCtrl'
+        })
         .state('form', {
             url: "/form",
             templateUrl: tempateURL,
@@ -60416,7 +60431,19 @@ myApp.directive('img', function ($compile, $parse) {
                 console.log("Directive model: ", $scope.model);
             }
         };
-    });
+    })
+
+// .directive('video', function ($http, $filter) {
+//     return {
+//         templateUrl: 'views/directive/video.html',
+//         scope: {
+//             model: "=ngModel"
+//         },
+//         link: function ($scope, element, attrs) {
+//             console.log("video Directive model: ", $scope.model);
+//         }
+//     };
+// });
 // JavaScript Document
 myApp.filter('myFilter', function () {
     // In the return function, we must pass in a single parameter which will be the data we will work on.
@@ -60556,10 +60583,10 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             "img": "img/course4.jpg",
             "text": "Course 4"
         }, {
-            "img": "img/course5.png",
+            "img": "img/course5.jpg",
             "text": "Course 5"
         }, {
-            "img": "img/course6.png",
+            "img": "img/course6.jpg",
             "text": "Course 6"
         }];
         $scope.Facilities = [{
@@ -60666,6 +60693,66 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         });
     })
 
+    .controller('moduleCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("content/module.html");
+        TemplateService.title = "Module"; // This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+        $scope.categoryImg = [{
+
+                "image": "img/module/2.jpg",
+                "title": "Category 1",
+                "title1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "title2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.consectetur adipisicing elit.Lorem ipsum dolor sit amet,",
+                "title3": "Harray Johnson",
+                "title4": "45min 57s",
+                "title5": "1,3890 ",
+                "title6": " Views"
+            },
+            {
+
+                "image": "img/module/4.jpg",
+                "title": "Category 2",
+                "title1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "title2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.consectetur adipisicing elit.Lorem ipsum dolor sit amet,",
+                "title3": "Harray Johnson",
+                "title4": "45min 57s",
+                "title5": "1,3890 ",
+                "title6": " Views"
+            },
+            {
+
+                "image": "img/module/5.jpg",
+                "title": "Category 3",
+                "title1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "title2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.consectetur adipisicing elit.Lorem ipsum dolor sit amet,",
+                "title3": "Harray Johnson",
+                "title4": "45min 57s",
+                "title5": "1,3890 ",
+                "title6": " Views"
+            },
+            {
+
+                "image": "img/module/6.jpg",
+                "title": "Category 4",
+                "title1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "title2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.consectetur adipisicing elit.Lorem ipsum dolor sit amet,",
+                "title3": "Harray Johnson",
+                "title4": "45min 57s",
+                "title5": "1,3890 ",
+                "title6": " Views"
+            }
+
+        ];
+        // $scope.image = "img/module/2.jpg";
+        // $scope.title = "Category 1";
+        // $scope.title1 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
+        // $scope.title2 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.consectetur adipisicing elit.Lorem ipsum dolor sit amet,",
+        //     $scope.title3 = "Harray Johnson",
+        //     $scope.title4 = "45min 57s",
+        //     $scope.title5 = "1,3890 ",
+        //     $scope.title6 = " Views"
+    })
+
     .controller('FormCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/form.html");
         TemplateService.title = "Form"; //This is the Title of the Website
@@ -60705,6 +60792,158 @@ myApp.controller('headerCtrl', function ($scope, TemplateService) {
     });
     $.fancybox.close(true);
 });
+myApp.controller('moduleDetailCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+    $scope.template = TemplateService.getHTML("content/module-test.html");
+    TemplateService.title = "Module Test"; // This is the Title of the Website
+    $scope.navigation = NavigationService.getNavigation();
+
+    $scope.videoSection = [{
+        "image": "img/moduleDetails1/video1.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video2.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video3.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video4.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video5.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video6.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video7.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video8.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video9.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video10.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video11.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video12.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video13.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video14.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }];
+
+    $scope.modules = [{
+        "image": "img/moduleDetails1/video8.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video9.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video10.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video11.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video12.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video13.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video14.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }, {
+        "image": "img/moduleDetails1/video15.jpg",
+        "header": "Lorem ipsum dolor",
+        "content": "John Derry",
+        "time": "48m 27s",
+        "views": "14,560"
+    }];
+
+    $scope.header = "Module Test";
+    $scope.content = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960 s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+
+    $scope.author_image = "img/moduleDetails1/overview.jpg";
+    $scope.name = "John Derry";
+
+    $scope.date = "16/1/1994";
+    $scope.views = "14,560";
+    $scope.overviewHeader = "Lorem Ipsum has been the industry's standard dummy";
+    $scope.overviewContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960 s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960 s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+})
 myApp.controller('languageCtrl', function ($scope, TemplateService, $translate, $rootScope) {
     $scope.changeLanguage = function () {
         console.log("Language CLicked");

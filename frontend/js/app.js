@@ -28,13 +28,8 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'moduleCtrl'
         })
-        .state('module-test', {
-            url: "/module-test",
-            templateUrl: tempateURL,
-            controller: 'moduleDetailCtrl'
-        })
-        .state('module-overview', {
-            url: "/module-overview",
+        .state('module-detail', {
+            url: "/module-detail",
             templateUrl: tempateURL,
             controller: 'moduleDetailCtrl'
         })

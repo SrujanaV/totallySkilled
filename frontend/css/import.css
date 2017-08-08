@@ -10172,10 +10172,12 @@ header {
   padding: 50px 10px;
   padding-top: 0px; }
 
-.seemore a {
-  text-decoration: none;
-  color: white;
-  font-weight: 300px; }
+.seemore {
+  margin-bottom: 20px; }
+  .seemore a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300px; }
 
 .module {
   margin: 30px 45px; }
