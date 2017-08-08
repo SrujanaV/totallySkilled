@@ -105,6 +105,17 @@
     border-radius: 15px;
   }
 }
+.category-img{
+  position:relative;
+  &:hover{
+     .course-imgoverlay {
+         @include position(absolute, 0, 0, null, null, 100%, 100%);
+            background-color: rgba(0, 0, 0, 0.5);
+            @include transition( 1.0s );
+            pointer-events: none;
+        }
+  }
+}
 
 .ctergory-text {
   padding: 10px 15px;

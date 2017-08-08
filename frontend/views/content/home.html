@@ -40,10 +40,10 @@
             <div class="row">
                 <div class="col-md-4" ng-repeat="course in Courses">
                     <div class="course-img text-center">
-                        <img ng-src={{course.img}} alt="EXPLORE" class="img-responsive">
+                        <img ng-src={{course.img}} alt="EXPLORE" class="img-responsive" ui-sref="module">
                         <div class="course-imgoverlay"></div>
                         <div class="course-text">
-                            <h4><a>{{course.text}}</a></h4>
+                            <h4><a ui-sref="module">{{course.text}}</a></h4>
                         </div>
                     </div>
                 </div>
