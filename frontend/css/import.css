@@ -9935,6 +9935,14 @@ h4 {
   font-family: Myriad Pro Regular;
   font-size: 20px; }
 
+h3 {
+  margin: 10px 0px;
+  font-size: 24px !important; }
+
+h1 {
+  font-family: 'Myriad Pro Bold';
+  font-size: 38px !important; }
+
 .footer_menu {
   background-color: #191919;
   color: white; }
@@ -10211,7 +10219,12 @@ header {
     padding-right: 0px; }
   .home .home_bg {
     position: relative;
-    z-index: -1; }
+    z-index: initial;
+    background-image: url(../img/home_bg.jpg);
+    min-height: calc(100vh - 70px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%; }
     .home .home_bg .bgImage-text {
       position: absolute;
       top: 45%;
@@ -10223,17 +10236,12 @@ header {
       color: white;
       width: 100%; }
       .home .home_bg .bgImage-text button {
-        cursor: pointer;
         background-color: #eb0509;
         border-radius: 10px;
         padding: 10px 65px;
         font-size: 18px; }
-      .home .home_bg .bgImage-text h1 {
-        font-family: 'Myriad Pro Bold';
-        font-size: 38px !important; }
       .home .home_bg .bgImage-text h3 {
-        margin: 10px 0px;
-        font-size: 24px !important; }
+        margin: 10px 0px; }
       .home .home_bg .bgImage-text .text-margin {
         margin: 30px 0px; }
 
@@ -10246,12 +10254,13 @@ header {
   background-color: rgba(0, 0, 0, 0.5); }
 
 .bgImg-steps {
+  position: absolute;
+  left: 15%;
+  bottom: -90px;
   padding: 20px;
   width: 70%;
   margin: 0px auto;
   background-color: #f3f3f3;
-  margin-top: -117px;
-  margin-bottom: 40px;
   z-index: 1; }
   .bgImg-steps h4 {
     margin-bottom: 0px; }
@@ -10261,7 +10270,10 @@ header {
       height: 60px; }
 
 .courses {
-  margin: 0 30px; }
+  margin: 0 30px;
+  margin-top: 200px; }
+  .courses a:hover {
+    font-size: 24px; }
   .courses .course-img {
     position: relative;
     width: 350px;
@@ -10286,11 +10298,6 @@ header {
       -o-transform: translate(-50%, -50%);
       color: white;
       width: 100%; }
-      .courses .course-img .course-text a {
-        text-decoration: none;
-        color: white; }
-        .courses .course-img .course-text a:hover {
-          font-size: 24px; }
 
 .facilities .redBg-img {
   position: relative;
@@ -10581,7 +10588,7 @@ flexslider {
 .text-module {
   position: absolute;
   top: 34%;
-  left: 45%; }
+  right: 45%; }
   .text-module h2 {
     font-family: Myriad Pro Regular;
     color: #f1f1f1; }
@@ -10601,10 +10608,32 @@ flexslider {
   padding: 3px 12px;
   margin: 10px 0px; }
 
-.btn-complrtetest {
+.time-left {
+  width: 178px;
+  height: 31px;
+  background: white;
+  border-radius: 16px;
+  color: #eb0509;
+  font-size: 17px;
+  font-family: 'Myriad Pro Bold';
+  padding: 5px 15px;
+  margin-top: 9px; }
+  .time-left span {
+    font-family: Myriad Pro Regular;
+    padding-right: 7px; }
+
+.btn-completetest {
   font-family: 'Myriad Pro Bold';
   font-size: 14px;
-  border-radius: 6px; }
+  border-radius: 6px;
+  background: #eb0509; }
+
+.btn-submit {
+  font-family: 'Myriad Pro Bold';
+  font-size: 17px;
+  padding: 3px 25px;
+  margin-bottom: 25px;
+  background: #eb0509; }
 
 .mar-tb {
   margin: 10px 0px; }
@@ -10627,7 +10656,7 @@ flexslider {
   background-color: white; }
 
 .padd-tblr {
-  padding: 50px 60px; }
+  padding: 50px 60px 25px; }
 
 /* Base for label styling */
 [type="checkbox"]:not(:checked),
@@ -10695,6 +10724,69 @@ flexslider {
 
 .options2 {
   margin: 25px 0px 5px 25px; }
+
+.pagination {
+  border-radius: 0px; }
+
+.pagination > li > a {
+  margin-right: 15px;
+  padding: 3px 7px;
+  float: none;
+  border-radius: 4px; }
+
+.display-inline {
+  display: inline; }
+
+.congratulation {
+  margin-top: 50px; }
+  .congratulation h3 {
+    font-size: 20px;
+    color: #eb0509; }
+
+.score {
+  text-align: right;
+  font-size: 17px; }
+
+.mar25 {
+  margin: 25px; }
+
+.name {
+  font-family: 'Myriad Pro Bold';
+  font-size: 22px; }
+
+.totalscore {
+  font-size: 16px;
+  color: #eb0509; }
+
+.border {
+  width: 128px;
+  height: 26px;
+  font-size: 16px;
+  padding: 2px 0px;
+  border: 1px solid #ebebeb;
+  box-shadow: 0px 0px 1px rgba(136, 136, 136, 0.55); }
+
+.padd-tb {
+  padding: 5px 7px; }
+
+.social-icon {
+  margin-bottom: 70px; }
+  .social-icon ul {
+    margin-left: 12px; }
+  .social-icon li {
+    width: 35px; }
+
+.totally-skilled-logo {
+  width: 250px;
+  margin-left: 20%; }
+
+.score-module .mar-lr {
+  margin: 40px 110px 60px; }
+
+.border-right {
+  border-right: 1px solid #ebebeb;
+  height: 256px;
+  margin-top: 11%; }
 
 #fancybox-loading,
 .fancybox-close,
