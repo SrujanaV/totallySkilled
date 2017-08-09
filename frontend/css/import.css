@@ -10581,7 +10581,7 @@ flexslider {
 .text-module {
   position: absolute;
   top: 34%;
-  left: 45%; }
+  right: 45%; }
   .text-module h2 {
     font-family: Myriad Pro Regular;
     color: #f1f1f1; }
@@ -10601,10 +10601,32 @@ flexslider {
   padding: 3px 12px;
   margin: 10px 0px; }
 
-.btn-complrtetest {
+.time-left {
+  width: 178px;
+  height: 31px;
+  background: white;
+  border-radius: 16px;
+  color: #eb0509;
+  font-size: 17px;
+  font-family: 'Myriad Pro Bold';
+  padding: 5px 15px;
+  margin-top: 9px; }
+  .time-left span {
+    font-family: Myriad Pro Regular;
+    padding-right: 7px; }
+
+.btn-completetest {
   font-family: 'Myriad Pro Bold';
   font-size: 14px;
-  border-radius: 6px; }
+  border-radius: 6px;
+  background: #eb0509; }
+
+.btn-submit {
+  font-family: 'Myriad Pro Bold';
+  font-size: 17px;
+  padding: 3px 25px;
+  margin-bottom: 25px;
+  background: #eb0509; }
 
 .mar-tb {
   margin: 10px 0px; }
@@ -10627,7 +10649,7 @@ flexslider {
   background-color: white; }
 
 .padd-tblr {
-  padding: 50px 60px; }
+  padding: 50px 60px 25px; }
 
 /* Base for label styling */
 [type="checkbox"]:not(:checked),
@@ -10695,6 +10717,69 @@ flexslider {
 
 .options2 {
   margin: 25px 0px 5px 25px; }
+
+.pagination {
+  border-radius: 0px; }
+
+.pagination > li > a {
+  margin-right: 15px;
+  padding: 3px 7px;
+  float: none;
+  border-radius: 4px; }
+
+.display-inline {
+  display: inline; }
+
+.congratulation {
+  margin-top: 50px; }
+  .congratulation h3 {
+    font-size: 20px;
+    color: #eb0509; }
+
+.score {
+  text-align: right;
+  font-size: 17px; }
+
+.mar25 {
+  margin: 25px; }
+
+.name {
+  font-family: 'Myriad Pro Bold';
+  font-size: 22px; }
+
+.totalscore {
+  font-size: 16px;
+  color: #eb0509; }
+
+.border {
+  width: 128px;
+  height: 26px;
+  font-size: 16px;
+  padding: 2px 0px;
+  border: 1px solid #ebebeb;
+  box-shadow: 0px 0px 1px rgba(136, 136, 136, 0.55); }
+
+.padd-tb {
+  padding: 5px 7px; }
+
+.social-icon {
+  margin-bottom: 70px; }
+  .social-icon ul {
+    margin-left: 12px; }
+  .social-icon li {
+    width: 35px; }
+
+.totally-skilled-logo {
+  width: 250px;
+  margin-left: 20%; }
+
+.score-module .mar-lr {
+  margin: 40px 110px 60px; }
+
+.border-right {
+  border-right: 1px solid #ebebeb;
+  height: 256px;
+  margin-top: 11%; }
 
 #fancybox-loading,
 .fancybox-close,

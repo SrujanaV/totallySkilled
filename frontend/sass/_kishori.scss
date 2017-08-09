@@ -210,9 +210,13 @@
 }
 
 .text-module {
-  position: absolute;
-  top: 34%;
-  left: 45%;
+  @include position(absolute,
+  34%,
+  null,
+  null,
+  45%,
+  null,
+  null);
   h2 {
     font-family: Myriad Pro Regular;
     color: $moduleDetBack; //  margin-top: 85px;
@@ -234,106 +238,244 @@
     padding: 6px 60px;
   }
 }
-.Complete-test{
-  .btn{
-padding: 3px 12px;
+
+.Complete-test {
+  .btn {
+    padding: 3px 12px;
     margin: 10px 0px;
   }
 }
-.btn-complrtetest {
+
+.time-left {
+  width: 178px;
+  height: 31px;
+  background: white;
+  border-radius: 16px;
+  color: $red;
+  font-size: 17px;
+  font-family: 'Myriad Pro Bold';
+  padding: 5px 15px;
+  margin-top: 9px;
+  span {
+    font-family: Myriad Pro Regular;
+    padding-right: 7px;
+  }
+}
+
+.btn-completetest {
   font-family: 'Myriad Pro Bold';
   font-size: 14px;
   border-radius: 6px;
+  background: $red;
 }
-.mar-tb{
+
+.btn-submit {
+  font-family: 'Myriad Pro Bold';
+  font-size: 17px;
+  padding: 3px 25px;
+  margin-bottom: 25px;
+  background: $red;
+}
+
+.mar-tb {
   margin: 10px 0px;
 }
-.questions{
-  span{
+
+.questions {
+  span {
     font-family: 'Myriad Pro Bold';
-      font-size: 17px;
+    font-size: 17px;
   }
-  p{
-      font-size: 18px;
-      color: #000;
+  p {
+    font-size: 18px;
+    color: #000;
   }
-  h6{
-     font-family: Myriad Pro Regular;
-       font-size: 16px;
-       color: #000;
-       padding: 20px 60px;
+  h6 {
+    font-family: Myriad Pro Regular;
+    font-size: 16px;
+    color: #000;
+    padding: 20px 60px;
   }
 }
-.bg-white{
+
+.bg-white {
   background-color: white;
 }
-.padd-tblr{
-  padding: 50px 60px;
+
+.padd-tblr {
+  padding: 50px 60px 25px;
 }
+
+
 /* Base for label styling */
+
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
   position: absolute;
   left: -9999px;
 }
-[type="checkbox"]:not(:checked) + label,
-[type="checkbox"]:checked + label {
+
+[type="checkbox"]:not(:checked)+label,
+[type="checkbox"]:checked+label {
   position: relative;
   padding-left: 1.95em;
   cursor: pointer;
 }
 
+
 /* checkbox aspect */
-[type="checkbox"]:not(:checked) + label:before,
-[type="checkbox"]:checked + label:before {
+
+[type="checkbox"]:not(:checked)+label:before,
+[type="checkbox"]:checked+label:before {
   content: '';
   position: absolute;
-  left: 0; top: 0;
+  left: 0;
+  top: 0;
   width: 15px;
-   height: 15px;
+  height: 15px;
   border: 1px solid #ccc;
-  background: #fff;
-  // border-radius: 4px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+  background: #fff; // border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1);
 }
+
+
 /* checked mark aspect */
-[type="checkbox"]:not(:checked) + label:after,
-[type="checkbox"]:checked + label:after {
+
+[type="checkbox"]:not(:checked)+label:after,
+[type="checkbox"]:checked+label:after {
   content: '✔';
   position: absolute;
   top: .1em;
-left: -2px;
+  left: -2px;
   font-size: 1.3em;
   line-height: 0.8;
-  color:$red;
+  color: $red;
   transition: all .2s;
 }
+
+
 /* checked mark aspect changes */
-[type="checkbox"]:not(:checked) + label:after {
+
+[type="checkbox"]:not(:checked)+label:after {
   opacity: 0;
   transform: scale(0);
 }
-[type="checkbox"]:checked + label:after {
+
+[type="checkbox"]:checked+label:after {
   opacity: 1;
   transform: scale(1);
 }
+
+
 /* disabled checkbox */
-[type="checkbox"]:disabled:not(:checked) + label:before,
-[type="checkbox"]:disabled:checked + label:before {
+
+[type="checkbox"]:disabled:not(:checked)+label:before,
+[type="checkbox"]:disabled:checked+label:before {
   box-shadow: none;
   border-color: #bbb;
   background-color: #ddd;
 }
-[type="checkbox"]:disabled:checked + label:after {
+
+[type="checkbox"]:disabled:checked+label:after {
   color: #999;
 }
-[type="checkbox"]:disabled + label {
+
+[type="checkbox"]:disabled+label {
   color: #aaa;
 }
 
-.options{
-      margin: 25px 0px 5px 65px;
+.options {
+  margin: 25px 0px 5px 65px;
 }
-.options2{
-    margin: 25px 0px 5px 25px;
+
+.options2 {
+  margin: 25px 0px 5px 25px;
+}
+
+//pagination
+.pagination {
+  border-radius: 0px;
+}
+
+.pagination>li>a {
+  // border-radius: 4px;
+}
+
+.pagination>li>a,
+{
+  margin-right: 15px;
+  padding: 3px 7px;
+  float: none;
+  border-radius: 4px;
+}
+
+//end of pagination
+//start of score page
+.display-inline {
+  display: inline;
+}
+
+.congratulation {
+  margin-top: 50px;
+  h3 {
+    font-size: 20px;
+    color: $red;
+  }
+}
+
+.score {
+  text-align: right;
+  font-size: 17px;
+}
+
+.mar25 {
+  margin: 25px;
+}
+
+.name {
+  font-family: 'Myriad Pro Bold';
+  font-size: 22px;
+}
+
+.totalscore {
+  font-size: 16px;
+  color: $red;
+}
+
+.border {
+  width: 128px;
+  height: 26px;
+  font-size: 16px;
+  padding: 2px 0px;
+  border: 1px solid #ebebeb;
+  box-shadow: 0px 0px 1px rgba(136, 136, 136, 0.55);
+}
+
+.padd-tb {
+  padding: 5px 7px;
+}
+
+.social-icon {
+  margin-bottom: 70px;
+  ul {
+    margin-left: 12px;
+  }
+  li {
+    width: 35px;
+  }
+}
+.totally-skilled-logo{
+      width: 250px;
+    // margin-top: 11%;
+    margin-left: 20%;
+}
+.score-module{
+  .mar-lr{
+        margin: 40px 110px 60px;
+  }
+}
+.border-right{
+  border-right:1px solid #ebebeb;
+  height: 256px;
+   margin-top: 11%;
 }
