@@ -7,7 +7,12 @@
     }
     .home_bg {
         position: relative;
-        z-index: -1;
+        z-index: initial;
+        background-image: url(../img/home_bg.jpg);
+        min-height: calc(100vh - 70px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
         .bgImage-text {
             @include position(absolute, 45%, 50%, null, null, null, null);
             transform: translate(-50%, -50%);
@@ -17,38 +22,32 @@
             color: white;
             width: 100%;
             button {
-                cursor: pointer;
                 background-color: $red;
                 border-radius: 10px;
                 padding: 10px 65px;
                 font-size: 18px;
             }
-            h1 {
-                font-family: 'Myriad Pro Bold';
-                font-size: 38px !important;
-            }
             h3 {
                 @include mar(10px 0px);
-                font-size: 24px !important;
             }
             .text-margin {
                 @include mar(30px 0px);
             }
         }
-        
     }
 }
+
 .bg-overlay {
-            @include position(absolute, 0, 0, null, null, 100%, 100%);
-            background-color: rgba(0, 0, 0, 0.5);
-        }
+    @include position(absolute, 0, 0, null, null, 100%, 100%);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .bgImg-steps {
+    @include position(absolute, null, 15%, -90px, null, null, null);
     @include pad(20px);
     width: 70%;
     @include mar(0px auto);
     background-color: #f3f3f3;
-    margin-top: -117px;
-    margin-bottom: 40px;
     z-index: 1;
     h4 {
         margin-bottom: 0px;
@@ -63,6 +62,12 @@
 
 .courses {
     @include mar(0 30px);
+    margin-top: 200px;
+    a {
+        &:hover {
+            font-size: 24px;
+        }
+    }
     .course-img {
         position: relative;
         width: 350px;
@@ -82,13 +87,6 @@
             -o-transform: translate(-50%, -50%);
             color: white;
             width: 100%;
-            a {
-                text-decoration: none;
-                color: white;
-                &:hover {
-                    font-size: 24px;
-                }
-            }
         }
     }
 }

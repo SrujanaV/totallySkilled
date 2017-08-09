@@ -122,6 +122,16 @@ h4 {
     font-size: 20px;
 }
 
+h3 {
+    @include mar(10px 0px);
+    font-size: 24px !important;
+}
+
+h1 {
+    font-family: 'Myriad Pro Bold';
+    font-size: 38px !important;
+}
+
 .footer_menu {
     background-color: #191919;
     color: white;
