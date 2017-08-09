@@ -33,6 +33,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'moduleDetailCtrl'
         })
+         .state('module-test', {
+            url: "/module-test",
+            templateUrl: tempateURL,
+            controller: 'moduleTestCtrl'
+        })
         .state('form', {
             url: "/form",
             templateUrl: tempateURL,
