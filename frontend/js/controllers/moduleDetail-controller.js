@@ -1,6 +1,6 @@
 myApp.controller('moduleDetailCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
     $scope.template = TemplateService.getHTML("content/module-detail.html");
-    TemplateService.title = "Module Test"; // This is the Title of the Website
+    TemplateService.title = "Module Detail"; // This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
 
     $scope.videoSection = [{

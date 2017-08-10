@@ -1,15 +1,15 @@
 <!-- Start of Home Container -->
-<section class="home">
+<div class="home">
     <!-- Start of Learn a Skill Online Background Image -->
     <section class="container-fluid">
         <div class="home_bg">
             <div class="bg-overlay"></div>
-            <div><img src="img/home_bg.jpg" class="img-responsive"></div>
+            <!-- <div><img src="img/home_bg.jpg" class="img-responsive"></div> -->
             <div class="bgImage-text text-center">
                 <h1><b>Learn a new skill online, on your time !</b></h1>
                 <h3>Take in depth online courses and meet any challenge with skill.</h3>
                 <h3 class="text-margin"><b>Try FREE for 15 days</b></h3>
-                <button type="button" class="btn btn-danger"><b>Start My Free Trial</b></button>
+                <button type="button" class="btn btn-danger">Start My Free Trial</button>
             </div>
         </div>
     </section>
@@ -40,11 +40,13 @@
             <div class="row">
                 <div class="col-md-4" ng-repeat="course in Courses">
                     <div class="course-img text-center">
-                        <img ng-src={{course.img}} alt="EXPLORE" class="img-responsive" ui-sref="module">
-                        <div class="course-imgoverlay"></div>
-                        <div class="course-text">
-                            <h4><a ui-sref="module">{{course.text}}</a></h4>
-                        </div>
+                        <a ui-sref="module">
+                            <img ng-src={{course.img}} alt="EXPLORE" class="img-responsive">
+                            <div class="course-imgoverlay"></div>
+                            <div class="course-text">
+                                <h4>{{course.text}}</h4>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -106,5 +108,5 @@
         </div>
     </section>
     <!-- End of Testimonials Section -->
-</section>
+</div>
 <!-- End of Home Container -->
