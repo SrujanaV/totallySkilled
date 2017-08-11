@@ -506,10 +506,7 @@ header {
             width: 110px;
             border: 1px solid #cccccc;
             @include position(absolute,
-            50%,
-            50px,
-            null,
-            null);
+            50% 50px null null);
         }
         @include transform(translateY(-50%));
     }
