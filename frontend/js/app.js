@@ -48,6 +48,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'moduleScoreCtrl'
         })
+         .state('account', {
+            url: "/account",
+            templateUrl: tempateURL,
+            controller: 'AccountCtrl'
+        })
         .state('form', {
             url: "/form",
             templateUrl: tempateURL,

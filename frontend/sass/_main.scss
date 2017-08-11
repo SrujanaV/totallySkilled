@@ -418,28 +418,7 @@ header {
     @include mar(30px 0);
     .nav {
         margin: 5px 60px;
-    } // .nav-tabs>li {
-    //     border-bottom: solid 3px transparent;
-    // }
-    // .nav-tabs>li>a:hover,
-    // .nav-tabs>li>a:active,
-    // .nav-tabs>li>a:focus {
-    //     border: 0;
-    //     border-color: $red;
-    //     background-color: transparent;
-    // }
-    // .nav-tabs>li.active,
-    // .nav-tabs>li:hover,
-    // .nav-tabs>li:focus {
-    //     text-decoration: none;
-    //     color: black;
-    //     border: 0;
-    //     border-radius: 0;
-    //     font-weight: bold;
-    //     background-color: transparent !important;
-    //     border-color: $red;
-    //     cursor: pointer;
-    // }
+    }
     .nav>li>a {
         color: #555555;
         border: 0;
@@ -561,3 +540,96 @@ header {
 }
 
 //End of aboutus.html
+//Start of Modals
+//start of login modal
+.login-modal {
+    @include mar(10px 30px);
+    .login {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+.input-field {
+    padding: 20px;
+}
+
+.inner-addon {
+    position: relative;
+}
+
+
+/* style icon */
+
+.inner-addon .fa {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+
+/* align icon */
+
+.left-addon .fa {
+    left: 0px;
+}
+
+
+/* add padding  */
+
+.left-addon input {
+    padding-left: 30px;
+}
+
+.company_logo {
+    @include mar(30px auto);
+    text-align: center;
+}
+
+.login-btn {
+    display: block;
+    padding: 20px;
+    .login_btn {
+        display: inline-block;
+        button {
+            width: 200px;
+        }
+    }
+    .forgot-text {
+        display: inline-block;
+        margin-left: 7px;
+    }
+}
+
+//end of login modal
+//start of sign up modal
+.signUp-title {
+    margin: 5px 0;
+}
+
+.signUp-form {
+    margin: 30px auto;
+}
+
+.signupfrm {
+    display: block;
+    text-align: center;
+    .alignment {
+        margin-right: 55px;
+    }
+    .label-cls {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        label {
+            font-weight: normal;
+        }
+    }
+    .input-cls {
+        display: inline-block;
+        width: 300px;
+        margin-left: 5px;
+    }
+}
+
+//End of Modals
