@@ -389,12 +389,7 @@ header {
     }
 }
 
-.module-detBottom {
-    background-color: white;
-    @include margin(30px 0);
-    .nav {
-        margin: 5px 60px;
-    }
+.ts-navtabs {
     .nav>li>a {
         color: #555555;
         border: 0;
@@ -408,7 +403,16 @@ header {
         background-color: transparent;
         border: 0;
         border-bottom: solid 3px $red;
-        cursor: default;
+        outline: 0;
+        cursor: pointer;
+    }
+}
+
+.module-detBottom {
+    background-color: white;
+    @include margin(30px 0);
+    .nav {
+        margin: 5px 60px;
     }
     .module-content {
         margin: 50px 60px;
@@ -515,6 +519,19 @@ header {
 //End of aboutus.html
 //Start of Modals
 //start of login modal
+.cancel-div {
+    margin-right: -20px;
+}
+
+.modal-cancel {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
 .login-modal {
     @include margin(10px 30px);
     .login {
@@ -555,7 +572,7 @@ header {
 }
 
 .company_logo {
-    @include margin(30px auto);
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -577,7 +594,8 @@ header {
 //end of login modal
 //start of sign up modal
 .signUp-title {
-    margin: 5px 0;
+    margin: 20px 0;
+    font-size: 16px;
 }
 
 .signUp-form {
@@ -601,6 +619,23 @@ header {
         display: inline-block;
         width: 185px;
         margin-left: 5px;
+    }
+}
+
+.alignment {
+    color: $red;
+}
+
+.tc {
+    text-align: center;
+    label {
+        font-weight: normal;
+    }
+}
+
+.signUp {
+    button {
+        width: 200px;
     }
 }
 
