@@ -89,6 +89,39 @@ a,
     transition: all ease 300ms;
 }
 
+.relate {
+    position: relative;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.display-table {
+    width: 100%;
+    height: 100%;
+}
+
+.display-cell {
+    display: table-cell;
+}
+
+.align-top {
+    vertical-align: top;
+}
+
+.align-middle {
+    vertical-align: middle;
+}
+
+.align-bottom {
+    vertical-align: bottom;
+}
+
+.section-padding {
+    @include padding(50px 0);
+}
+
 p {
     font-family: Myriad Pro Regular;
     font-size: 13px;
@@ -443,6 +476,46 @@ header {
     }
 }
 
+//start of module details test page
+//Start of aboutus.html page
+.about-us {
+    .about-us-content {
+        @include padding(0 65px);
+        .about-company-mission,
+        .about-company-desc {
+            h3 {
+                color: $red;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        .about-company-mission {
+            padding-bottom: 30px;
+        }
+    }
+    .quote-icon {
+        @include size(70px,
+        auto);
+        @include padding(15px);
+        border: 1px solid transparent;
+        @include margin(0 auto);
+        position: relative;
+        &:before {
+            content: '';
+            width: 110px;
+            border: 1px solid #cccccc;
+            @include position(absolute,
+            50%,
+            50px,
+            null,
+            null);
+        }
+        @include transform(translateY(-50%));
+    }
+}
+
+//End of aboutus.html
 //Start of Modals
 //start of login modal
 .login-modal {
