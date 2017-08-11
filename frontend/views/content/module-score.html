@@ -12,44 +12,43 @@
             <div class="course-text score-module">
                 <div class="box-shadow bg-white mar-lr">
                     <div class="row">
-                 <div class="col-md-6 col-sm-6 col-xs-12">
-                      
-                            <div class="totally-skilled-logo">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                     <div class="totally-skilled-logo">
                                 <img src="img/logo.png" alt="totally-skilled logo" class="img-responsive">
                             </div>
-                             <div class="border-right">
-                     </div>
+                            <div class="border-right">
+                            </div>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="congratulation text-center" ng-model="formData">
-                            <h3>{{formData.congomsg}}</h3>
+                            <div class="congratulation " ng-model="formData">
+                                <h4>{{formData.congomsg}}</h4>
                             </div>
                             <div class="row">
                                 <div>
                                     <div class="col-md-5 col-sm-6 col-xs-6">
                                         <div class="score">
-                                            <div class="mar25">Name</div>
-                                            <div class="mar25">Your Score</div>
-                                            <div class="mar25">Course Type</div>
-                                            <div class="mar25">Share</div>
+                                            <div class="mar-trbl">Name</div>
+                                            <div class="mar-trbl">Your Score</div>
+                                            <div class="mar-trbl">Course Type</div>
+                                            <div class="mar-trbl">Share</div>
                                         </div>
                                     </div>
                                     <div class="col-md-7 col-sm-6 col-xs-6">
-                                        <div ng-model="formData">
-                                            <div class=" name mar25">{{formData.name}}</div>
-                                            <div class="totalscore mar25">
-                                                <div class="display-inline border padd-tb"> 40/50 </div>
+                                        <div class="congratulation" ng-model="formData">
+                                            <div class=" name mar-trbl">{{formData.name}}</div>
+                                            <div class="totalscore mar-trbl">
+                                                <div class="display-inline border padd-tb"> {{formData.score}} </div>
                                                 <div class="display-inline padd-tb">=</div>
-                                                <div class="display-inline border padd-tb"> 80%</div>
+                                                <div class="display-inline border padd-tb"> {{formData.percentagescore}}%</div>
                                             </div>
-                                            <div class="mar25 ">
-                                                <div class="border text-center">Course 1</div>
+                                            <div class="mar-trbl ">
+                                                <div class="border text-center">{{formData.courses}}</div>
                                             </div>
-                                            <div class="mar25">
+                                            <div class="mar-trbl">
                                                 <ul class="list-inline social-icon ">
-                                                    <li><img src="img/gmail.png" alt="gmail-icon" class="img-responsive"></li>
-                                                    <li><img src="img/face.png" alt="facebbok" class="img-responsive"></li>
-                                                    <li><img src="img/t.png" alt="twitter" class="img-responsive"></li>
+                                                    <li><a><img src="img/gmail.png" alt="gmail-icon" class="img-responsive"></a></li>
+                                                    <li><a><img src="img/face.png" alt="facebbok" class="img-responsive"></a></li>
+                                                    <li><a><img src="img/t.png" alt="twitter" class="img-responsive"></a></li>
                                                 </ul>
                                             </div>
                                         </div>
