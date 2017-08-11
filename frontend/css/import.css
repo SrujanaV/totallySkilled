@@ -10775,8 +10775,7 @@ flexslider {
 /* Base for label styling */
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
-  position: absolute;
-  left: -9999px; }
+  display: none; }
 
 [type="checkbox"]:not(:checked) + label,
 [type="checkbox"]:checked + label {
@@ -10857,6 +10856,8 @@ flexslider {
     font-size: 20px;
     margin-left: 25px;
     color: #eb0509; }
+  .congratulation .social-icon {
+    margin: 0px 0px 70px 10px; }
 
 .score {
   text-align: right;
@@ -10886,7 +10887,7 @@ flexslider {
   padding: 5px 7px; }
 
 .social-icon {
-  margin: 0px 0px 70px 10px; }
+  margin: -25px 0px 70px 50px; }
   .social-icon ul {
     margin-left: 12px; }
   .social-icon li {
@@ -10932,6 +10933,9 @@ flexslider {
     color: #000;
     padding: 10px; }
 
+.Subscription span {
+  font-family: Myriad Pro Regular; }
+
 .Subscription h4 {
   font-family: 'Myriad Pro Bold';
   margin: 0;
@@ -10951,6 +10955,14 @@ flexslider {
   height: 304px;
   margin-top: -92%;
   margin-right: 6px; }
+
+.privacy-policy h6 {
+  font-family: 'Myriad Pro Bold';
+  color: #000;
+  font-size: 13px; }
+
+.privacy-policy p {
+  color: #000; }
 
 #fancybox-loading,
 .fancybox-close,
