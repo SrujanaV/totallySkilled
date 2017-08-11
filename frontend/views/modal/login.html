@@ -55,7 +55,7 @@
                                 <input type="text" class="form-control" name="name" ng-model="formData.name" data-toggle="tooltip" title="Please enter your name"
                                     autofocus required/>
                             </div>
-                            <div class="alignment" ng-show="signUp.name.$touched && signUp.name.$invalid">Please enter your name</div>
+                            <span class="alignment" ng-show="signUp.name.$touched && signUp.name.$invalid">Please enter your name</span>
                         </div>
                     </div>
                     <div class="form-group">
@@ -64,47 +64,107 @@
                                 <label for="email" class="control-label">Email</label>
                             </div>
                             <div class="input-cls">
-                                <input type="email" class="form-control" name="email" ng-model="formData.email" data-toggle="tooltip" title="Please enter your email"
-                                    required/>
+                                <input type="email" class="form-control" name="email" ng-model="formData.email" data-toggle="tooltip" title="Please enter your Email"
+                                    autofocus required/>
                             </div>
-                            <div class="alignment" ng-show="signUp.email.$touched && signUp.email.$invalid">Please enter your email</div>
+                            <span class="alignment" ng-show="signUp.email.$touched && signUp.email.$invalid">Please enter your email</span>
                         </div>
                     </div>
-                    <div>
-                        <label for="email">Email </label>
-                        <input type="email" id="email">
+                    <div class="form-group">
+                        <div class="signupfrm">
+                            <div class="label-cls">
+                                <label for="remail" class="control-label">Re-enter Email</label>
+                            </div>
+                            <div class="input-cls">
+                                <input type="email" class="form-control" name="remail" ng-model="formData.remail" data-toggle="tooltip" title="Please re-enter your Email"
+                                    autofocus required/>
+                            </div>
+                            <span class="alignment" ng-show="signUp.remail.$touched && signUp.remail.$invalid">Please re-enter your email</span>
+                        </div>
                     </div>
-                    <div>
-                        <label for="remail">Re-enter Email </label>
-                        <input type="email" id="remail">
+                    <div class="form-group">
+                        <div class="signupfrm">
+                            <div class="label-cls">
+                                <label for="remail" class="control-label">Password</label>
+                            </div>
+                            <div class="input-cls">
+                                <input type="password" class="form-control" name="password" ng-model="formData.password" data-toggle="tooltip" title="Please enter your Password"
+                                    autofocus required/>
+                            </div>
+                            <span class="alignment" ng-show="signUp.password.$touched && signUp.password.$invalid">Please enter your password</span>
+                        </div>
                     </div>
-                    <div>
-                        <label for="password">Password </label>
-                        <input type="password" id="password">
+                    <div class="form-group">
+                        <div class="signupfrm">
+                            <div class="label-cls">
+                                <label for="cpassword" class="control-label">Confirm Password</label>
+                            </div>
+                            <div class="input-cls">
+                                <input type="password" class="form-control" name="cpassword" ng-model="formData.cpassword" data-toggle="tooltip" title="Please re-enter your Password"
+                                    autofocus required/>
+                            </div>
+                            <span class="alignment" ng-show="signUp.cpassword.$touched && signUp.cpassword.$invalid">Please re-enter your password</span>
+                        </div>
                     </div>
-                    <div>
-                        <label for="cpassword">Full Name </label>
-                        <input type="password" id="cpassword">
+                    <div class="form-group">
+                        <div class="signupfrm">
+                            <div class="label-cls">
+                                <label for="country" class="control-label">Country</label>
+                            </div>
+                            <div class="input-cls">
+                                <input type="text" class="form-control" name="country" ng-model="formData.country" data-toggle="tooltip" title="Please enter your country"
+                                    autofocus required/>
+                            </div>
+                            <span class="alignment" ng-show="signUp.country.$touched && signUp.country.$invalid">Please enter your country</span>
+                        </div>
                     </div>
-                    <div>
-                        <label for="country">Country </label>
-                        <input type="text" id="country">
+                    <div class="form-group">
+                        <div class="signupfrm">
+                            <div class="label-cls">
+                                <label for="city" class="control-label">City</label>
+                            </div>
+                            <div class="input-cls">
+                                <input type="text" class="form-control" name="city" ng-model="formData.city" data-toggle="tooltip" title="Please enter your city"
+                                    autofocus required/>
+                            </div>
+                            <span class="alignment" ng-show="signUp.city.$touched && signUp.city.$invalid">Please enter your city</span>
+                        </div>
                     </div>
-                    <div>
-                        <label for="city">City </label>
-                        <input type="text" id="city">
+                    <div class="form-group">
+                        <div class="signupfrm">
+                            <div class="label-cls">
+                                <label for="age" class="control-label">Age</label>
+                            </div>
+                            <div class="input-cls">
+                                <input type="number" class="form-control" name="age" ng-model="formData.age" data-toggle="tooltip" title="Please enter your age"
+                                    autofocus required/>
+                            </div>
+                            <span class="alignment" ng-show="signUp.age.$touched && signUp.age.$invalid">Please enter your age</span>
+                        </div>
                     </div>
-                    <div>
-                        <label for="age">Age </label>
-                        <input type="number" id="age">
+                    <div class="form-group">
+                        <div class="signupfrm">
+                            <div class="label-cls">
+                                <label for="gender" class="control-label">Gender</label>
+                            </div>
+                            <div class="input-cls">
+                                <input type="text" class="form-control" name="gender" ng-model="formData.gender" data-toggle="tooltip" title="Please enter your gender"
+                                    autofocus required/>
+                            </div>
+                            <span class="alignment" ng-show="signUp.gender.$touched && signUp.gender.$invalid">Please enter your gender</span>
+                        </div>
                     </div>
-                    <div>
-                        <label for="gender">Gender </label>
-                        <input type="text" id="gender">
-                    </div>
-                    <div>
-                        <label for="message">How do you know about us </label>
-                        <textarea id="message" rows="2" cols="50"></textarea>
+                    <div class="form-group">
+                        <div class="signupfrm">
+                            <div class="label-cls">
+                                <label for="message" class="control-label">How do you know about us</label>
+                            </div>
+                            <div class="input-cls">
+                                <textarea class="form-control" name="message" ng-model="formData.message" data-toggle="tooltip" title="Please enter your message"
+                                    autofocus required/>
+                            </div>
+                            <span class="alignment" ng-show="signUp.message.$touched && signUp.message.$invalid">Please enter your message</span>
+                        </div>
                     </div>
                     <div>
                         <input type="checkbox" name="check" value="agree" />I agree with the <a href="">Terms &amp; Conditions</a>

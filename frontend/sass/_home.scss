@@ -14,7 +14,7 @@
         background-repeat: no-repeat;
         background-position: 50% 50%;
         .bgImage-text {
-            @include position(absolute, 45%, 50%, null, null, null, null);
+            @include position(absolute, 45% null null 50%);
             transform: translate(-50%, -50%);
             -webkit-transform: translate(-50%, -50%);
             -moz-transform: translate(-50%, -50%);
@@ -28,25 +28,25 @@
                 font-size: 18px;
             }
             h3 {
-                @include mar(10px 0px);
+                @include margin(10px 0px);
             }
-            .text-margin {
-                @include mar(30px 0px);
+            .text-gingin {
+                @include margin(30px 0px);
             }
         }
     }
 }
 
 .bg-overlay {
-    @include position(absolute, 0, 0, null, null, 100%, 100%);
+    @include position(absolute, 0 0 0 0);
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bgImg-steps {
-    @include position(absolute, null, 15%, -90px, null, null, null);
-    @include pad(20px);
+    @include position(absolute, null null -90px 15%);
+    @include padding(20px);
     width: 70%;
-    @include mar(0px auto);
+    @include margin(0px auto);
     background-color: #f3f3f3;
     z-index: 1;
     h4 {
@@ -61,7 +61,7 @@
 }
 
 .courses {
-    @include mar(0 30px);
+    @include margin(0 30px);
     margin-top: 200px;
     a {
         &:hover {
@@ -73,14 +73,14 @@
         width: 350px;
         height: 250px;
         overflow: hidden;
-        @include mar(10px);
+        @include margin(10px);
         .course-imgoverlay {
-            @include position(absolute, 0, 0, null, null, 100%, 100%);
+            @include position(absolute, 0 0 0 0);
             background-color: rgba(0, 0, 0, 0.5);
             pointer-events: none;
         }
         .course-text {
-            @include position(absolute, 55%, 50%, null, null, null, null);
+            @include position(absolute, 55% null null 50%);
             transform: translate(-50%, -50%);
             -webkit-transform: translate(-50%, -50%);
             -moz-transform: translate(-50%, -50%);
@@ -94,9 +94,10 @@
 .facilities {
     .redBg-img {
         position: relative;
-        @include mar(80px auto);
+        @include margin(80px auto);
         .redBg-content {
-            @include position(absolute, 20%, 10%, null, null, 80%, null);
+            @include position(absolute, 20% null null 10%);
+            width: 80%;
             color: white;
             .img-height {
                 min-height: 80px;
@@ -112,7 +113,7 @@
 .course-title,
 .testim-title {
     text-align: center;
-    @include mar(20px auto);
+    @include margin(20px auto);
     color: $font-color;
 }
 
@@ -122,13 +123,13 @@
     }
     .about-head {
         width: 650px;
-        @include mar(30px auto);
+        @include margin(30px auto);
         font-size: 16px;
         color: black;
     }
     .about-content {
         width: 850px;
-        @include mar(0 auto);
+        @include margin(0 auto);
         margin-bottom: 40px;
         font-size: 14px;
     }
@@ -157,9 +158,9 @@ flexslider {
 .test-cont {
     background-color: #f3f3f3;
     margin-top: 30px;
-    @include pad(30px);
+    @include padding(30px);
     .testimonials {
-        @include mar(30px 30px);
+        @include margin(30px 30px);
         .flex-direction-nav a:before {
             font: normal normal normal 14px/1 FontAwesome;
             font-size: 50px;
@@ -208,14 +209,16 @@ flexslider {
         position: relative;
         text-align: justify;
         padding-left: 12px;
-        @include mar(30px 0);
+        @include margin(30px 0);
         &:before {
             background-image: url(img/quotes.png);
-            @include position(absolute, 0, 0, null, null, 30px, null);
+            @include position(absolute, 0 null null 0);
+            width: 30px;
         }
     }
     .card-quotesImg {
-        @include position(absolute, 0, 0, null, null, 30px, null);
+        @include position(absolute, 0 null null 0);
+        width: 30px;
     }
     .card-spacing {
         padding: 30px;

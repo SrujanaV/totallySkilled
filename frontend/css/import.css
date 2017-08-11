@@ -9936,7 +9936,7 @@ h4 {
   font-size: 20px; }
 
 h3 {
-  margin: 10px 0px;
+  margin: 10px 0;
   font-size: 24px !important; }
 
 h1 {
@@ -10201,7 +10201,7 @@ header {
   .module h6 {
     margin-bottom: 0px;
     margin-top: 0px; }
-  .module span {
+  .module mar span {
     color: #666;
     margin-right: 20px;
     font-size: 10px; }
@@ -10211,6 +10211,68 @@ header {
   background-color: #f8f8f8; }
   .module-block .video-text {
     margin: 19px; }
+
+.login-modal {
+  margin: 10px 30px; }
+  .login-modal .login {
+    width: 85%;
+    margin: 0 auto; }
+
+.input-field {
+  padding: 20px; }
+
+.inner-addon {
+  position: relative; }
+
+/* style icon */
+.inner-addon .fa {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none; }
+
+/* align icon */
+.left-addon .fa {
+  left: 0px; }
+
+/* add padding  */
+.left-addon input {
+  padding-left: 30px; }
+
+.company_logo {
+  margin: 30px auto;
+  text-align: center; }
+
+.login-btn {
+  display: block;
+  padding: 20px; }
+  .login-btn .login_btn {
+    display: inline-block; }
+    .login-btn .login_btn button {
+      width: 200px; }
+  .login-btn .forgot-text {
+    display: inline-block;
+    margin-left: 7px; }
+
+.signUp-title {
+  margin: 5px 0; }
+
+.signUp-form {
+  margin: 30px auto; }
+
+.signupfrm {
+  display: block; }
+  .signupfrm .alignment {
+    margin-right: 55px; }
+  .signupfrm .label-cls {
+    display: inline-block;
+    width: 110px;
+    text-align: right; }
+    .signupfrm .label-cls label {
+      font-weight: normal; }
+  .signupfrm .input-cls {
+    display: inline-block;
+    width: 185px;
+    margin-left: 5px; }
 
 .home {
   overflow: hidden; }
@@ -10241,25 +10303,25 @@ header {
         padding: 10px 65px;
         font-size: 18px; }
       .home .home_bg .bgImage-text h3 {
-        margin: 10px 0px; }
-      .home .home_bg .bgImage-text .text-margin {
-        margin: 30px 0px; }
+        margin: 10px 0; }
+      .home .home_bg .bgImage-text .text-gingin {
+        margin: 30px 0; }
 
 .bg-overlay {
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.5); }
 
 .bgImg-steps {
   position: absolute;
-  left: 15%;
   bottom: -90px;
+  left: 15%;
   padding: 20px;
   width: 70%;
-  margin: 0px auto;
+  margin: 0 auto;
   background-color: #f3f3f3;
   z-index: 1; }
   .bgImg-steps h4 {
@@ -10283,9 +10345,9 @@ header {
     .courses .course-img .course-imgoverlay {
       position: absolute;
       top: 0;
+      right: 0;
+      bottom: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
       pointer-events: none; }
     .courses .course-img .course-text {
@@ -10356,7 +10418,7 @@ flexslider {
   margin-top: 30px;
   padding: 30px; }
   .test-cont .testimonials {
-    margin: 30px 30px; }
+    margin: 30px; }
     .test-cont .testimonials .flex-direction-nav a:before {
       font: normal normal normal 14px/1 FontAwesome;
       font-size: 50px;
@@ -10519,8 +10581,6 @@ flexslider {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     transition: 1s;
     pointer-events: none; }
@@ -10584,8 +10644,6 @@ flexslider {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.22); }
 
 .text-module {

@@ -115,12 +115,7 @@
   &:hover {
     .course-imgoverlay {
       @include position(absolute,
-      0,
-      0,
-      null,
-      null,
-      100%,
-      100%);
+      0 null null 0);
       background-color: rgba(0, 0, 0, 0.5);
       @include transition( 1.0s);
       pointer-events: none;
@@ -204,23 +199,13 @@
 
 .bg-overlay-module {
   @include position(absolute,
-  0,
-  0,
-  null,
-  null,
-  100%,
-  100%);
+  0 null null 0);
   background-color: rgba(0, 0, 0, 0.22);
 }
 
 .text-module {
   @include position(absolute,
-  34%,
-  null,
-  null,
-  45%,
-  null,
-  null);
+  34% 45% null null);
   h2 {
     font-family: Myriad Pro Regular;
     color: $moduleDetBack; //  margin-top: 85px;
@@ -503,14 +488,16 @@
   color: $red;
   padding-left: 10px;
 }
-.mar-l{
+
+.mar-l {
   margin-left: 130px;
 }
+
 .profile-detalis {
   margin-top: 35px;
   a {
     text-decoration: underline;
-      color: $red;
+    color: $red;
     &:hover {
       color: $red;
     }
@@ -539,10 +526,12 @@
     font-size: 17px;
   }
 }
-.display-inline-block{
+
+.display-inline-block {
   display: inline-block;
 }
-.account{
+
+.account {
   .border-right {
     border-right: 1px solid #ebebeb;
     height: 304px;
