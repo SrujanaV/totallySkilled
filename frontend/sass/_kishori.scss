@@ -56,6 +56,10 @@
   margin: 0;
 }
 
+.mar-t30 {
+  margin-top: 30px;
+}
+
 .mar-t {
   margin-top: 20px;
 }
@@ -417,8 +421,9 @@
 
 .congratulation {
   margin-top: 50px;
-  h3 {
+  h4 {
     font-size: 20px;
+    margin-left: 25px;
     color: $red;
   }
 }
@@ -426,10 +431,11 @@
 .score {
   text-align: right;
   font-size: 17px;
+  margin-top: 50px;
 }
 
-.mar25 {
-  margin: 25px;
+.mar-trbl {
+  margin: 31px 27px 31px 5px;
 }
 
 .name {
@@ -456,26 +462,91 @@
 }
 
 .social-icon {
-  margin-bottom: 70px;
+  margin: 0px 0px 70px 10px;
   ul {
     margin-left: 12px;
   }
   li {
-    width: 35px;
+    width: 36px;
   }
 }
-.totally-skilled-logo{
-      width: 250px;
-    // margin-top: 11%;
-    margin-left: 20%;
+
+.totally-skilled-logo {
+  width: 250px;
+  margin-top: 40%;
+  margin-left: 20%;
 }
-.score-module{
-  .mar-lr{
-        margin: 40px 110px 60px;
+
+.score-module {
+  .mar-lr {
+    margin: 40px 120px 60px;
   }
 }
-.border-right{
-  border-right:1px solid #ebebeb;
-  height: 256px;
-   margin-top: 11%;
+
+.border-right {
+  border-right: 1px solid #ebebeb;
+  height: 307px;
+  margin-top: -39%;
+  margin-right: 13px;
+}
+
+//end of module-score
+//start of account
+.profile {
+  h3 {
+    font-family: Myriad Pro Regular;
+    color: #fff;
+  }
+}
+
+.change {
+  color: $red;
+  padding-left: 10px;
+}
+.mar-l{
+  margin-left: 130px;
+}
+.profile-detalis {
+  margin-top: 35px;
+  a {
+    text-decoration: underline;
+      color: $red;
+    &:hover {
+      color: $red;
+    }
+  }
+  h4 {
+    font-family: 'Myriad Pro Bold';
+    padding-left: 10px;
+  }
+  h5 {
+    font-family: Myriad Pro Regular;
+    color: #000;
+    padding: 10px;
+  }
+}
+
+.Subscription {
+  h4 {
+    font-family: 'Myriad Pro Bold';
+    margin: 0;
+    font-size: 17px;
+    line-height: 27px;
+  }
+  h5 {
+    font-family: Myriad Pro Regular;
+    margin: 0;
+    font-size: 17px;
+  }
+}
+.display-inline-block{
+  display: inline-block;
+}
+.account{
+  .border-right {
+    border-right: 1px solid #ebebeb;
+    height: 304px;
+    margin-top: -92%;
+    margin-right: 6px;
+  }
 }
