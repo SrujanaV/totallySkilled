@@ -50,6 +50,10 @@ module.exports = [
   'frontend/js/controllers/moduleTest-controller.js',
   'frontend/js/controllers/module-score.js',
   'frontend/js/controllers/account.js',
-
+  'frontend/js/controllers/module-score.js',
+  'frontend/js/controllers/account.js',
+  'frontend/js/controllers/privacypolicy.js',
+  'frontend/js/controllers/faq.js',
   'frontend/js/controllers/language-controller.js',
+
 ];

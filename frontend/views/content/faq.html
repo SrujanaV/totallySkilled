@@ -176,3 +176,45 @@
         </div>
     </div>
 </section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="mar-lr">
+                <uib-accordion close-others="oneAtATime">
+                    <div uib-accordion-group class="panel-default" is-open="status.open">
+                        <uib-accordion-heading class="strip-gray">
+                            I can have markup, too!
+                            <i class="pull-right fa mar-t" ng-class="{'fa fa-minus': status.open, 'fa fa-plus': !status.open}"></i>
+                        </uib-accordion-heading>
+                        <div>
+                            <h5> This is just some content to illustrate fancy headings.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repellat nobis tenetur ipsa asperiores
+                                nesciunt repellendus, excepturi molestiae, aspernatur pariatur dignissimos consequatur in
+                                veritatis placeat labore laborum accusamus tempore magni!</p>
+                        </div>
+                        <div>
+                            <h5> This is just some content to illustrate fancy headings.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repellat nobis tenetur ipsa asperiores
+                                nesciunt repellendus, excepturi molestiae, aspernatur pariatur dignissimos consequatur in
+                                veritatis placeat labore laborum accusamus tempore magni!</p>
+                        </div>
+                        <div>
+                            <h5> This is just some content to illustrate fancy headings.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repellat nobis tenetur ipsa asperiores
+                                nesciunt repellendus, excepturi molestiae, aspernatur pariatur dignissimos consequatur in
+                                veritatis placeat labore laborum accusamus tempore magni!</p>
+                        </div>
+                    </div>
+                    <div uib-accordion-group class="panel-default" is-open="status.open1">
+                        <uib-accordion-heading>
+                            I can have markup, too!
+                            <i class="pull-right fa mar-t" ng-class="{'fa fa-minus': status.open1, 'fa fa-plus': !status.open1}"></i>
+                        </uib-accordion-heading>
+                        This is just some content to illustrate fancy headings.
+                    </div>
+                </uib-accordion>
+            </div>
+        </div>
+    </div>
+</div>

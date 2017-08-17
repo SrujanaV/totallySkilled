@@ -58,10 +58,22 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'AccountCtrl'
         })
+
         .state('enquiry', {
             url: "/enquiry",
             templateUrl: tempateURL,
             controller: 'enquiryCtrl'
+        })
+        .state('privacypolicy', {
+            url: "/privacypolicy",
+            templateUrl: tempateURL,
+            controller: 'PrivacypolicyCtrl'
+        })
+        .state('faq', {
+            url: "/faq",
+            templateUrl: tempateURL,
+            controller: 'FaqCtrl'
+
         })
         .state('form', {
             url: "/form",

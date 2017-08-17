@@ -29,12 +29,12 @@
                         <div class=" bg-white mar-lr">
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-xs-12 account">
-                                    <div class="profile-detalis">
-                                        <h4>Harray Watson</h4>
-                                        <h5>harry.watson@gmail.com</h5>
-                                        <h5>************<span class="change">(Change)</span></h5>
-                                        <h5>USA <span class="change">(Change)</span></h5>
-                                        <h5>New York <span class="change">(Change)</span></h5>
+                                    <div class="profile-detalis" ng-model="formData">
+                                        <h4>{{formData.username}}</h4>
+                                        <h5>{{formData.email}}</h5>
+                                        <h5>{{formData.password}}<span class="change">(Change)</span></h5>
+                                        <h5>{{formData.country}} <span class="change">(Change)</span></h5>
+                                        <h5>{{formData.city}} <span class="change">(Change)</span></h5>
                                         <h5><a class="">View previous results</a></h5>
                                     </div>
                                     <div class="border-right">
@@ -44,28 +44,32 @@
                                     <div class="Subscription">
                                         <div class="mar-t30">
                                             <h4>Subscription History</h4>
-                                            <h5>7.7.2017 - 6.10.2017<span class="change">(90 days remaining)</span></h5>
+                                            <h5>{{formData.subscriptiondate}}<span class="change">(90 days remaining)</span></h5>
                                         </div>
                                         <div class="mar-t30">
                                             <h4>Membership History <span class="change">(Change)</span></h4>
-                                            <h5>7.7.2017 - 6.10.2017</h5>
+                                            <h5>{{formData.membershipdate}}</h5>
                                         </div>
                                         <div class="mar-t30">
                                             <h4>Transaction History </h4>
-                                            <h5>21 - 7- 2017</h5>
+                                            <h5>{{formData.transactiondate}}</h5>
                                         </div>
-                                        <div class="mar-t30">
+                                        <!--<div class="mar-t30">
                                             <div class="display-inline-block">
                                                 <h5>Share</h5>
                                             </div>
-                                            <div class="display-inline-block">
-                                                <ul class="list-inline social-icon  ">
-                                                    <li><a><img src="img/gmail.png" alt="gmail-icon" class="img-responsive"></a></li>
-                                                    <li><a><img src="img/face.png" alt="facebbok" class="img-responsive"></a></li>
-                                                    <li><a><img src="img/t.png" alt="twitter" class="img-responsive"></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        </div>-->
+                                            <div class="mar-t30 ">
+                                           <div class="">
+                                               <h5>Share</h5>
+                                               <ul class="list-inline social-icon  ">
+                                                   <li><a><img src="img/gmail.png" alt="gmail-icon" class="img-responsive"></a></li>
+                                                   <li><a><img src="img/face.png" alt="facebbok" class="img-responsive"></a></li>
+                                                   <li><a><img src="img/t.png" alt="twitter" class="img-responsive"></a></li>
+                                               </ul>
+                                           </div>
+                                       </div>
+                                     
                                     </div>
                                 </div>
                             </div>

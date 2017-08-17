@@ -4,10 +4,12 @@
             <div class="row">
                 <div class="col-md-9 col-xs-3">
                     <div class="video-div">
-                        <div class="video-head">Lorem Ipsum is simply dummy text of the printing and typesetting </div>
+                        <div class="video-head">Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is simply dummy text
+                            of the printing and typesetting Lorem Ipsum is simply dummy text of the printing and typesetting
+                            Lorem Ipsum is simply dummy text of the printing and typesetting</div>
                         <div class="video-img">
                             <div class="video-overlay"></div>
-                            <div class="videologo-pos"><img src="img/moduleDetails1/video-symbol.png" class="img-responsive"></div>
+                            <div class="videologo-pos"><i class="fa fa-play" aria-hidden="true"></i></div>
                             <div><img src="img/moduleDetails1/mainVideo.jpg" class="img-responsive"></div>
                         </div>
                     </div>
@@ -15,7 +17,7 @@
                 <div class="col-md-3 col-xs-3">
                     <div class="rel-course">
                         <div><button type="button" class="btn btn-danger">Start My Free Trial</button></div>
-                        <div class="back-color">
+                        <div class="back-color" id="style-1">
                             <div class="course-head">Related Course</div>
                             <div class="row" ng-repeat="video in videoSection">
                                 <div class="col-md-5">
@@ -35,7 +37,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="module-detBottom">
+                    <div class="module-detBottom ts-navtabs">
                         <div class="row">
                             <uib-tabset>
                                 <uib-tab index="0" heading="Module">
@@ -80,7 +82,7 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="btn-test">
-                                            <button type="button" class="btn btn-danger"><i class="fa fa-lock"></i>Start Test</button>
+                                            <button type="button" class="btn btn-danger" ui-sref="module-test"><i class="fa fa-lock"></i>Start Test</button>
                                         </div>
                                     </div>
                                 </uib-tab>

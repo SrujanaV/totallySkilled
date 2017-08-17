@@ -300,8 +300,9 @@
 
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
-  position: absolute;
-  left: -9999px;
+  // position: absolute;
+  // left: -9999px;
+  display: none;
 }
 
 [type="checkbox"]:not(:checked)+label,
@@ -411,6 +412,9 @@
     margin-left: 25px;
     color: $red;
   }
+  .social-icon {
+    margin: 0px 0px 70px 10px;
+}
 }
 
 .score {
@@ -447,7 +451,7 @@
 }
 
 .social-icon {
-  margin: 0px 0px 70px 10px;
+    margin: -25px 0px 70px 50px;
   ul {
     margin-left: 12px;
   }
@@ -514,6 +518,9 @@
 }
 
 .Subscription {
+  span{
+      font-family: Myriad Pro Regular;
+  }
   h4 {
     font-family: 'Myriad Pro Bold';
     margin: 0;
@@ -537,5 +544,18 @@
     height: 304px;
     margin-top: -92%;
     margin-right: 6px;
+  }
+}
+//end of account
+//start of privacy policy
+
+.privacy-policy{
+  h6{
+        font-family: 'Myriad Pro Bold';
+        color: #000;
+        font-size: 13px;
+  }
+  p{
+     color: #000;
   }
 }

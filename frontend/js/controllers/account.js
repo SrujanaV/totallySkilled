@@ -4,9 +4,12 @@
         $scope.navigation = NavigationService.getNavigation();
         $scope.formData = {};
         $scope.formData.congomsg = "Congratulations ! You have cleared this test.";
-       $scope.formData.name = "Harry Watson";
-       $scope.formData.score = "40/50";
-        $scope.formData.percentagescore = "80";
-         $scope.formData.cources = "Cources 1";
-          $scope.formData.optionD = "Discussion groups";
+       $scope.formData.username = "Harry Watson";
+       $scope.formData.email = "harry.watson@gmail.com";
+        $scope.formData.password = "***********";
+         $scope.formData.country = "USA ";
+           $scope.formData.city = "New York ";
+          $scope.formData.subscriptiondate = "7.7.2017 - 6.10.2017";
+            $scope.formData.membershipdate = "7.7.2017 - 6.10.2017";
+              $scope.formData.transactiondate = "21 - 7- 2017";
  })
