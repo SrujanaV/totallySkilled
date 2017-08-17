@@ -1,3 +1,6 @@
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "other/font-fix";
+
 /* Bootstrap Variables Goes Here */
 
 $brand-primary: #0d9dff !default;
@@ -9,7 +12,6 @@ $footer-menu:#bbb7c0;
 $moduleDetBack:#f1f1f1;
 $red:#eb0509;
 $font-color:#ee080b;
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 // Mixins
 @mixin linx ($link, $visit, $hover, $active) {
     a {
@@ -30,7 +32,6 @@ $font-color:#ee080b;
 
 /* Bootstrap Variables Goes Here */
 
-@import "other/font-fix";
 @font-face {
     font-family: 'Myriad Pro Regular';
     font-style: normal;
@@ -89,6 +90,10 @@ a,
     transition: all ease 300ms;
 }
 
+textarea {
+    resize: none;
+}
+
 .relate {
     position: relative;
 }
@@ -122,6 +127,20 @@ a,
     @include padding(50px 0);
 }
 
+.padding-bt {
+    padding-bottom: 20px;
+}
+
+//All Colors
+.bg-lt-gray-color {
+    background-color: #f5f5f5;
+}
+
+.font-clr-red {
+    color: #ee080b;
+}
+
+//End of All colors
 p {
     font-family: Myriad Pro Regular;
     font-size: 13px;
@@ -565,6 +584,9 @@ header {
 //start of module details test page
 //Start of aboutus.html page
 .about-us {
+    .banner-img {
+        background-color: rgba(0, 0, 255, 0.64);
+    }
     .about-us-content {
         @include padding(0 65px);
         .about-company-mission,
@@ -580,25 +602,104 @@ header {
             padding-bottom: 30px;
         }
     }
+    .about-imgs-block {
+        max-height: 250px;
+        @include padding(10px 0 15px);
+        margin-bottom: 5px;
+        overflow: hidden;
+    }
+    .about-comp-desc {
+        h4 {
+            @include padding(0 15px);
+        }
+    }
     .quote-icon {
-        @include size(70px,
+        @include size(45px,
         auto);
         @include padding(15px);
         border: 1px solid transparent;
         @include margin(0 auto);
         position: relative;
+        top: 15px;
         &:before {
             content: '';
             width: 110px;
             border: 1px solid #cccccc;
             @include position(absolute,
-            50% 50px null null);
+            50% 45px null null);
+        }
+        &:after {
+            content: '';
+            width: 110px;
+            border: 1px solid #cccccc;
+            @include position(absolute,
+            50% null null 45px);
         }
         @include transform(translateY(-50%));
     }
 }
 
 //End of aboutus.html
+//Start of FAQ's
+.faq {
+    .faqs-content {
+        @include padding(50px);
+    }
+    .faq-pannel>.panel-heading {
+        @include padding(15px);
+        border: 1px solid #4b4b4b;
+        background-color: #4b4b4b;
+        color: #ffffff;
+    }
+    .faq-pannel>.panel-heading+.panel-collapse>.panel-body {
+        background-color: #f9f9f9;
+        @include padding(15px 45px);
+    }
+    .faq-pannel .panel-title>a {
+        font-size: 20px;
+    }
+    .question {
+        @include padding(10px 15px);
+        border-left: 5px solid $red;
+        background-color: $moduleDetBack;
+        font-family: 'Myriad Pro Bold';
+    }
+    .answer {
+        @include padding(15px 0 20px);
+        border-bottom: 1px solid #ebebeb;
+        @include margin(0 20px 15px);
+        color: #000000;
+    }
+}
+
+//End of FAQ
+//Start of Enquiry.html
+.enquiry {
+    @include padding(null 150px null 50px);
+    .custom-form-control {
+        width: 100%;
+        @include padding(0);
+        border: none;
+        position: relative;
+        line-height: 1.428571429;
+        &:focus {
+            outline: none;
+        }
+    }
+    .enquiry-submit--btn {
+        @include button-variant(white,
+        $red,
+        $red);
+        @include padding(6px 25px);
+        border-radius: 5px;
+        font-family: Myriad Pro Bold;
+    } // textarea,
+    // input {
+    //     @include form-control-focus($color: $red);
+    // }
+}
+
+//End of Enquiry.html
 //Start of Modals
 //start of login modal
 .cancel-div {

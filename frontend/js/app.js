@@ -43,17 +43,28 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'AboutUsCtrl'
         })
+        .state('faq', {
+            url: "/faq",
+            templateUrl: tempateURL,
+            controller: 'FaqCtrl'
+        })
         .state('module-score', {
             url: "/module-score",
             templateUrl: tempateURL,
             controller: 'moduleScoreCtrl'
         })
-         .state('account', {
+        .state('account', {
             url: "/account",
             templateUrl: tempateURL,
             controller: 'AccountCtrl'
         })
-         .state('privacypolicy', {
+
+        .state('enquiry', {
+            url: "/enquiry",
+            templateUrl: tempateURL,
+            controller: 'enquiryCtrl'
+        })
+        .state('privacypolicy', {
             url: "/privacypolicy",
             templateUrl: tempateURL,
             controller: 'PrivacypolicyCtrl'
@@ -62,6 +73,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             url: "/faq",
             templateUrl: tempateURL,
             controller: 'FaqCtrl'
+
         })
         .state('form', {
             url: "/form",
