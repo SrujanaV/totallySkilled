@@ -44,10 +44,12 @@ module.exports = [
 
   // Contorllers
   'frontend/js/controllers/controller.js',
+  'frontend/js/controllers/enquiry-controller.js',
   'frontend/js/controllers/header-controller.js',
   'frontend/js/controllers/moduleDetail-controller.js',
   'frontend/js/controllers/moduleTest-controller.js',
-    'frontend/js/controllers/module-score.js',
-    'frontend/js/controllers/account.js',
+  'frontend/js/controllers/module-score.js',
+  'frontend/js/controllers/account.js',
+
   'frontend/js/controllers/language-controller.js',
 ];

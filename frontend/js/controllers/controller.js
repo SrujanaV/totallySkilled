@@ -233,6 +233,11 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         TemplateService.title = "About Us"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
     })
+    .controller('FaqCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("content/faq.html");
+        TemplateService.title = "FAQ"; // This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+    })
 
 
     // Example API Controller
