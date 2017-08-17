@@ -4,7 +4,6 @@
     <section class="container-fluid">
         <div class="home_bg">
             <div class="bg-overlay"></div>
-            <!-- <div><img src="img/home_bg.jpg" class="img-responsive"></div> -->
             <div class="bgImage-text text-center">
                 <h1><b>Learn a new skill online, on your time !</b></h1>
                 <h3>Take in depth online courses and meet any challenge with skill.</h3>
@@ -39,20 +38,51 @@
             </div>
             <div class="row">
                 <div class="col-md-4" ng-repeat="course in Courses">
-                    <div class="course-img text-center">
-                        <a ui-sref="module">
+                    <div class="course">
+                        <div class="course-img">
+                            <a ui-sref="module" class="hvr-grow">
                             <img ng-src={{course.img}} alt="EXPLORE" class="img-responsive">
-                            <div class="course-imgoverlay"></div>
-                            <div class="course-text">
-                                <h4>{{course.text}}</h4>
-                            </div>
                         </a>
+                        </div>
+                        <div class="course-text">
+                            <div class="display-table">
+                                <div class="display-cell align-middle">
+                                    <h4>{{course.text}}</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- End of Courses Section -->
+
+
+    <div class="banner-area padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <!-- Banner Image -->
+                    <div class="banner-add">
+                        <div class="shortcode-content banner-effect1"> <a href="#"> <img src="img/course1.jpg" alt="SHOP NOW" width="300" height="300"> </a>
+                            <div class="banner-des">
+                                <div class="display-table">
+                                    <div class="display-cell align_center align_middle">
+                                        <div class="texts">
+                                            <h4>{{course.text}}</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Start of Facilities with red overlay image Section -->
     <section class="container-fluid">
         <div class="facilities">

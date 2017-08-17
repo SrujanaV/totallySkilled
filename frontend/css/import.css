@@ -9934,7 +9934,8 @@ textarea {
 
 .display-table {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  display: table; }
 
 .display-cell {
   display: table-cell; }
@@ -10081,8 +10082,12 @@ header {
       display: inline-block; }
     header .header_margin i {
       position: absolute;
-      right: 25px;
-      top: 23px; }
+      height: 16px;
+      right: -3px;
+      top: 23px;
+      width: 40px;
+      background: white;
+      padding-left: 3px; }
   header input {
     margin: 20px;
     border: 0;
@@ -10126,7 +10131,8 @@ header {
     text-overflow: ellipsis; }
   .video-div .video-img {
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    overflow: hidden; }
     .video-div .video-img .video-overlay {
       background-color: rgba(0, 0, 0, 0.4);
       position: absolute;
@@ -10596,28 +10602,17 @@ header {
     font-size: 24px; }
   .courses .course-img {
     position: relative;
-    width: 350px;
     height: 250px;
     overflow: hidden;
     margin: 10px; }
-    .courses .course-img .course-imgoverlay {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none; }
     .courses .course-img .course-text {
       position: absolute;
-      top: 55%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
+      top: 0;
+      left: 0;
       color: white;
-      width: 100%; }
+      text-align: center;
+      width: 100%;
+      height: 100%; }
 
 .facilities .redBg-img {
   position: relative;
@@ -10741,6 +10736,61 @@ flexslider {
     text-align: right; }
     .flexslider-cards .card-footer .company-name {
       color: #eb0509; }
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 1.2s ease 0s;
+  transition-duration: 0.8s;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform; }
+
+.banner-des {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: rgba(0, 0, 0, 0.6); }
+
+.banner-add {
+  position: relative;
+  overflow: hidden; }
+  .banner-add .banner-des {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
+.banner-effect1::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 1.2s ease 0s;
+  z-index: 1; }
+
+.banner-effect1:hover::before {
+  opacity: 1; }
 
 .mar-lr {
   margin: 0px 40px; }

@@ -74,27 +74,30 @@
     }
     .course-img {
         position: relative;
-        width: 350px;
         height: 250px;
         overflow: hidden;
         @include margin(10px);
-        .course-imgoverlay {
-            @include position(absolute, 0 0 0 0);
-            background-color: rgba(0, 0, 0, 0.5);
-            pointer-events: none;
-        }
         .course-text {
-            @include position(absolute, 55% null null 50%);
-            transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
+            @include position(absolute, 0 null null 0);
             color: white;
+            text-align: center;
             width: 100%;
+            height: 100%;
         }
     }
 }
 
+// .course-imgoverlay {
+//     &:before {
+//         @include position(absolute, 0 0 0 0);
+//         background-color: rgba(0, 0, 0, 0.5);
+//         pointer-events: none;
+//         opacity: 0;
+//         &:hover::before {
+//             opacity: 1;
+//         }
+//     }
+// }
 .facilities {
     .redBg-img {
         position: relative;
@@ -244,6 +247,65 @@ flexslider {
             color: $red;
         }
     }
+}
+
+
+/* Grow */
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition: all 1.2s ease 0s;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+
+.banner-des {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+    opacity: rgba(0, 0, 0, 0.6);
+}
+
+.banner-add {
+    position: relative;
+    overflow: hidden;
+    .banner-des {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.banner-effect1::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 1.2s ease 0s;
+    z-index: 1;
+}
+
+.banner-effect1:hover::before {
+    opacity: 1;
 }
 
 // End of Home Page
