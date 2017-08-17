@@ -5,8 +5,8 @@ myApp.controller('headerCtrl', function ($scope, $uibModal, TemplateService) {
     });
     $.fancybox.close(true);
 
-    $scope.openLogin = function () {
-        console.log("Hello");
+    $scope.openLogin = function (activetab) {
+        $scope.activeTab = activetab;
         $scope.loginModal = $uibModal.open({
             animation: true,
             templateUrl: 'views/modal/login.html',

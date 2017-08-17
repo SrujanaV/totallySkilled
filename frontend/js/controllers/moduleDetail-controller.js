@@ -5,8 +5,8 @@ myApp.controller('moduleDetailCtrl', function ($scope, TemplateService, Navigati
 
     $scope.videoSection = [{
         "image": "img/moduleDetails1/video1.jpg",
-        "header": "Lorem ipsum dolor",
-        "content": "John Derry",
+        "header": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+        "content": "John Derry John Derry John Derry John Derry John Derry John Derry John Derry John Derry John Derry",
         "time": "48m 27s",
         "views": "14,560"
     }, {
@@ -91,8 +91,8 @@ myApp.controller('moduleDetailCtrl', function ($scope, TemplateService, Navigati
 
     $scope.modules = [{
         "image": "img/moduleDetails1/video8.jpg",
-        "header": "Lorem ipsum dolor",
-        "content": "John Derry",
+        "header": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+        "content": "John Derry John Derry John Derry John Derry John Derry John Derry John Derry John Derry John Derry",
         "time": "48m 27s",
         "views": "14,560"
     }, {

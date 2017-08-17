@@ -5,7 +5,7 @@
     <div class="company_logo"><img src="img/logo.png" alt="LOGO" height="40"></div>
     <div>
         <div class="ts-navtabs">
-            <uib-tabset active="activeJustified" justified="false">
+            <uib-tabset justified="false" active="activeTab">
                 <uib-tab index="0" heading="Login">
                     <div class="login">
                         <form name="loginForm">
@@ -55,10 +55,10 @@
                                     <label for="fullname" class="control-label">Full Name</label>
                                 </div>
                                 <div class="input-cls">
-                                    <input type="text" class="form-control" name="name" ng-model="formData.name" data-toggle="tooltip" title="Please enter your name"
+                                    <input type="text" class="form-control" name="fullname" ng-model="formData.fullname" data-toggle="tooltip" title="Please enter your fullname"
                                         required/>
                                 </div>
-                                <span class="alignment" ng-show="signUp.name.$touched && signUp.name.$invalid">Please enter your name</span>
+                                <span class="alignment" ng-show="signUp.fullname.$touched && signUp.fullname.$invalid">Please enter your fullname</span>
                             </div>
                         </div>
                         <div class="form-group">
@@ -91,10 +91,10 @@
                                     <label for="remail" class="control-label">Password</label>
                                 </div>
                                 <div class="input-cls">
-                                    <input type="password" class="form-control" name="password" ng-model="formData.password" data-toggle="tooltip" title="Please enter your Password"
+                                    <input type="password" class="form-control" name="spassword" ng-model="formData.spassword" data-toggle="tooltip" title="Please enter your password"
                                         required/>
                                 </div>
-                                <span class="alignment" ng-show="signUp.password.$touched && signUp.password.$invalid">Please enter your password</span>
+                                <span class="alignment" ng-show="signUp.spassword.$touched && signUp.spassword.$invalid">Please enter your password</span>
                             </div>
                         </div>
                         <div class="form-group">
@@ -169,12 +169,6 @@
                                 <span class="alignment" ng-show="signUp.message.$touched && signUp.message.$invalid">Please enter your message</span>
                             </div>
                         </div>
-                        <!-- <div class="form-group">
-                        <div class="signupfrm">
-                            <input type="checkbox" id="agree" name="agree" /><label for="agree">I agree with the <a href="">Terms &amp; Conditions</a></label>
-                            <span class="alignment" ng-show="if(!this.signUp.checkbox.checked)">Please accept terms and conditions</span>
-                        </div>
-                    </div> -->
                         <div class="tc">
                             <input type="checkbox" id="agree" /><label for="agree">I agree with the <a href="">Terms &amp; Conditions</a></label>
                         </div>

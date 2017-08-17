@@ -6,6 +6,7 @@
         padding-right: 0px;
     }
     .home_bg {
+        background-color: #ccc;
         position: relative;
         z-index: initial;
         background-image: url(../img/home_bg.jpg);
@@ -22,10 +23,12 @@
             color: white;
             width: 100%;
             button {
-                background-color: $red;
                 border-radius: 10px;
                 padding: 10px 65px;
                 font-size: 18px;
+                &:focus {
+                    outline: none;
+                }
             }
             h3 {
                 @include margin(10px 0px);
@@ -45,6 +48,7 @@
 .bgImg-steps {
     @include position(absolute, null null -90px 15%);
     @include padding(20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     width: 70%;
     @include margin(0px auto);
     background-color: #f3f3f3;
@@ -194,8 +198,8 @@ flexslider {
 }
 
 .flexslider-cards {
-    border: 1px #CCC solid;
-    box-shadow: 0px 11px 8px -10px #CCC, 0px -11px 8px -10px #CCC;
+    // border: 1px #CCC solid;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); // box-shadow: 0px 11px 8px -10px #CCC;
     margin: 0 20px;
     text-align: center;
     background: white;
