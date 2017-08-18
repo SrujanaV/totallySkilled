@@ -60279,15 +60279,46 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'moduleCtrl'
         })
-        .state('module-test', {
-            url: "/module-test",
+        .state('module-detail', {
+            url: "/module-detail",
             templateUrl: tempateURL,
             controller: 'moduleDetailCtrl'
         })
-        .state('module-overview', {
-            url: "/module-overview",
+        .state('module-test', {
+            url: "/module-test",
             templateUrl: tempateURL,
-            controller: 'moduleDetailCtrl'
+            controller: 'moduleTestCtrl'
+        })
+        .state('about-us', {
+            url: "/about-us",
+            templateUrl: tempateURL,
+            controller: 'AboutUsCtrl'
+        })
+        .state('faq', {
+            url: "/faq",
+            templateUrl: tempateURL,
+            controller: 'FaqCtrl'
+        })
+        .state('module-score', {
+            url: "/module-score",
+            templateUrl: tempateURL,
+            controller: 'moduleScoreCtrl'
+        })
+        .state('account', {
+            url: "/account",
+            templateUrl: tempateURL,
+            controller: 'AccountCtrl'
+        })
+
+        .state('enquiry', {
+            url: "/enquiry",
+            templateUrl: tempateURL,
+            controller: 'enquiryCtrl'
+        })
+        .state('privacypolicy', {
+            url: "/privacypolicy",
+            templateUrl: tempateURL,
+            controller: 'PrivacypolicyCtrl'
         })
         .state('form', {
             url: "/form",
@@ -60773,11 +60804,23 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             });
         };
     })
+
     .controller('GridCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/grid.html");
         TemplateService.title = "Grid"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
     })
+    .controller('AboutUsCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("content/about-us.html");
+        TemplateService.title = "About Us"; // This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+    })
+    .controller('FaqCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("content/faq.html");
+        TemplateService.title = "FAQ"; // This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+    })
+
 
     // Example API Controller
     .controller('DemoAPICtrl', function ($scope, TemplateService, apiService, NavigationService, $timeout) {
@@ -60785,22 +60828,44 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             console.log(data);
         });
     });
-myApp.controller('headerCtrl', function ($scope, TemplateService) {
-    $scope.template = TemplateService;
+myApp.controller('enquiryCtrl', function ($scope, $uibModal, TemplateService) {
+    $scope.template = TemplateService.getHTML("content/enquiry.html");
+    TemplateService.title = "Enquiry"; //This is the Title of the Website
+    // $scope.navigation = NavigationService.getNavigation();
     $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
     });
     $.fancybox.close(true);
 });
+myApp.controller('headerCtrl', function ($scope, $uibModal, TemplateService) {
+    $scope.template = TemplateService;
+    $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+        $(window).scrollTop(0);
+    });
+    $.fancybox.close(true);
+
+    $scope.openLogin = function (activetab) {
+        $scope.activeTab = activetab;
+        $scope.loginModal = $uibModal.open({
+            animation: true,
+            templateUrl: 'views/modal/login.html',
+            scope: $scope,
+            windowClass: 'loginModalSize'
+        });
+    }
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+});
 myApp.controller('moduleDetailCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
-    $scope.template = TemplateService.getHTML("content/module-test.html");
-    TemplateService.title = "Module Test"; // This is the Title of the Website
+    $scope.template = TemplateService.getHTML("content/module-detail.html");
+    TemplateService.title = "Module Detail"; // This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
 
     $scope.videoSection = [{
         "image": "img/moduleDetails1/video1.jpg",
-        "header": "Lorem ipsum dolor",
-        "content": "John Derry",
+        "header": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+        "content": "John Derry John Derry John Derry John Derry John Derry John Derry John Derry John Derry John Derry",
         "time": "48m 27s",
         "views": "14,560"
     }, {
@@ -60885,8 +60950,8 @@ myApp.controller('moduleDetailCtrl', function ($scope, TemplateService, Navigati
 
     $scope.modules = [{
         "image": "img/moduleDetails1/video8.jpg",
-        "header": "Lorem ipsum dolor",
-        "content": "John Derry",
+        "header": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+        "content": "John Derry John Derry John Derry John Derry John Derry John Derry John Derry John Derry John Derry",
         "time": "48m 27s",
         "views": "14,560"
     }, {
@@ -60943,6 +61008,59 @@ myApp.controller('moduleDetailCtrl', function ($scope, TemplateService, Navigati
     $scope.views = "14,560";
     $scope.overviewHeader = "Lorem Ipsum has been the industry's standard dummy";
     $scope.overviewContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960 s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960 s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+})
+   myApp.controller('moduleTestCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("content/module-test.html");
+        TemplateService.title = "Form"; //This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+        $scope.formData = {};
+        $scope.formData.coursetest = "Course Test 1";
+       $scope.formData.question = "Which is the best search tool for finding Web sites that have been handpicked and recommended by someone else?";
+       $scope.formData.optionA = "Subject directories";
+        $scope.formData.optionB = "Search engines";
+         $scope.formData.optionC = "Meta-search engines";
+          $scope.formData.optionD = "Discussion groups";
+ })
+  myApp.controller('moduleScoreCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("content/module-score.html");
+        TemplateService.title = "Form"; //This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+        $scope.formData = {};
+        $scope.formData.congomsg = "Congratulations ! You have cleared this test.";
+       $scope.formData.name = "Harry Watson";
+       $scope.formData.score = "40/50";
+        $scope.formData.percentagescore = "80";
+         $scope.formData.courses = "Courses 1";
+          $scope.formData.optionD = "Discussion groups";
+ })
+  myApp.controller('AccountCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("content/account.html");
+        TemplateService.title = "Form"; //This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+        $scope.formData = {};
+        $scope.formData.congomsg = "Congratulations ! You have cleared this test.";
+       $scope.formData.username = "Harry Watson";
+       $scope.formData.email = "harry.watson@gmail.com";
+        $scope.formData.password = "***********";
+         $scope.formData.country = "USA ";
+           $scope.formData.city = "New York ";
+          $scope.formData.subscriptiondate = "7.7.2017 - 6.10.2017";
+            $scope.formData.membershipdate = "7.7.2017 - 6.10.2017";
+              $scope.formData.transactiondate = "21 - 7- 2017";
+ })
+  myApp.controller('PrivacypolicyCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("content/privacypolicy.html");
+        TemplateService.title = "Form"; //This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+        $scope.formData = {};
+       
+ })
+  myApp.controller('FaqCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("content/faq.html");
+        TemplateService.title = "Form"; //This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+        $scope.formData = {};
+        $scope.oneAtATime = true;
 })
 myApp.controller('languageCtrl', function ($scope, TemplateService, $translate, $rootScope) {
     $scope.changeLanguage = function () {

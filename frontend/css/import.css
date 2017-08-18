@@ -10083,11 +10083,11 @@ header {
     header .header_margin i {
       position: absolute;
       height: 16px;
-      right: -3px;
+      right: 18px;
       top: 23px;
-      width: 40px;
+      width: 20px;
       background: white;
-      padding-left: 3px; }
+      padding-left: 5px; }
   header input {
     margin: 20px;
     border: 0;
@@ -10140,6 +10140,8 @@ header {
       left: 0;
       width: 100%;
       height: 100%; }
+      .video-div .video-img .video-overlay:hover {
+        opacity: 0.5; }
     .video-div .video-img .videologo-pos {
       text-align: center;
       border: solid 5px #fff;
@@ -10320,6 +10322,8 @@ header {
   position: relative;
   background-color: #f8f8f8;
   cursor: pointer; }
+  .module-block:hover {
+    opacity: 0.5; }
   .module-block .video-text {
     margin: 19px; }
 
@@ -10737,39 +10741,12 @@ flexslider {
     .flexslider-cards .card-footer .company-name {
       color: #eb0509; }
 
-/* Grow */
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition: all 1.2s ease 0s;
-  transition-duration: 0.8s;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform; }
-
-.banner-des {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%; }
-
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  opacity: rgba(0, 0, 0, 0.6); }
-
 .banner-add {
+  margin: 15px 0;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer;
+  height: 300px; }
   .banner-add .banner-des {
     height: 100%;
     left: 0;
@@ -10777,7 +10754,7 @@ flexslider {
     top: 0;
     width: 100%; }
 
-.banner-effect1::before {
+.banner-effect1:before {
   background-color: rgba(0, 0, 0, 0.5);
   bottom: 0;
   content: "";
@@ -10789,8 +10766,18 @@ flexslider {
   transition: all 1.2s ease 0s;
   z-index: 1; }
 
-.banner-effect1:hover::before {
+.banner-effect1 img {
+  transition: all 1.2s ease; }
+
+.banner-effect1:hover:before {
   opacity: 1; }
+
+.banner-effect1:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.texts {
+  position: relative; }
 
 .mar-lr {
   margin: 0px 40px; }

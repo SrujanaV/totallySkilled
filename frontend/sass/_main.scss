@@ -374,7 +374,7 @@ header {
             width: 100%;
             height: 100%;
             &:hover {
-                color: #333;
+                opacity: 0.5;
             }
         }
         .videologo-pos {
@@ -585,6 +585,9 @@ header {
     position: relative;
     background-color: #f8f8f8;
     cursor: pointer;
+    &:hover {
+        opacity: 0.5;
+    }
     .video-text {
         margin: 19px;
     }
